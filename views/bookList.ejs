@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OJB</title>
+
+        <link rel="stylesheet" href="css/bookList.css">
+
+        <link rel="stylesheet" href="css/universal.css">
+        <link rel="stylesheet" href="css/assets/footer.css">
+        <link rel="stylesheet" href="css/assets/navbar.css">
+        <link rel="stylesheet" href="css/assets/typeLinks.css">
+        <link rel="stylesheet" href="css/assets/authentication.css">
+
+         <!-- for that poster font -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+         <!-- "Cinzel Decorative", serif; -->
+    </head>
+    <body>
+        <header>
+            <%- include('assets/navbar') %>
+            <%- include('assets/typeLinks') %>
+        </header>
+        <main>
+            <%- include('assets/authentication') %>
+
+            <section class="show-section">
+                <div class="show-div">
+                    <!-- Heading********************** -->
+                    <div class="heading">
+                        <p>Your Bookings</p>
+                    </div>
+                    <div class="show-list">
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="cancel-booking-section">
+                <div class="cancel-booking-container">
+
+                    <div class="dark-upper-container">
+                        Cancel Booking
+                    </div>
+                    <div class="details-container-parent">
+                        <div class="details-container">
+                            <div class="image-of-jewellery">
+                                <img src=""
+                                    alt="failed to load">
+                            </div>
+
+                            <div class="details-info-only">
+                                 <!-- <div class="booking-id cancel-booking-div"> 
+                                    <label>Booking ID: </label>
+                                    <p></p>
+                                </div>  -->
+                                <div class="booking-name cancel-booking-div">
+                                    <label>Jewellery Name: </label>
+                                    <p></p>
+                                </div>
+                                <div class="booking-qty cancel-booking-div">
+                                    <label>Quantity: </label>
+                                    <p></p>
+                                </div>
+                                <div class="booking-category cancel-booking-div">
+                                    <label>Category: </label>
+                                    <p></p>
+                                </div>
+                                <div class="booking-price cancel-booking-div">
+                                    <label>Total Price: </label>
+                                    <p>&#8377;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cancel-booking-buttons">
+                            
+                            <button class="cancel-btn">Cancel</button>
+                           
+                            <button class="no-btn">No</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dark">
+            
+            </section>
+
+        </main>
+
+        <%- include('assets/footer') %>
+
+        <script src="/js/bookList.js"></script>
+
+        <script src="/js/assets/navbar.js"></script>
+        <script src="/js/assets/typeLinks.js"></script>
+        <script src="/js/assets/authentication.js"></script>
+
+        <!-- icons script -->
+        <script src="https://kit.fontawesome.com/4aa734da70.js"
+            crossorigin="anonymous"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

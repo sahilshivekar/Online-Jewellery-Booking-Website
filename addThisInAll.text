@@ -1,0 +1,48 @@
+css links:
+
+<link rel="stylesheet" href="css/universal.css">
+<link rel="stylesheet" href="css/assets/adminHeaders.css">
+<link rel="stylesheet" href="css/assets/footer.css">
+<link rel="stylesheet" href="css/assets/navbar.css">
+<link rel="stylesheet" href="css/assets/typeLinks.css">
+<link rel="stylesheet" href="css/assets/authentication.css">
+
+<!-- for that canva poster font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+<!-- "Cinzel Decorative", serif; -->
+*********************************************************************
+
+
+inside header tag:
+
+<%- include('assets/navbar') %>
+<%- include('assets/typeLinks') %>
+
+***************************************************************
+
+inside main (at last or start anywhere):
+
+<%- include('assets/authentication') %>
+
+***************************************************************
+
+after main:
+
+<%- include('assets/footer') %>
+
+    
+
+<script src="/js/assets/navbar.js"></script>
+<script src="/js/assets/typeLinks.js"></script>
+<script src="/js/assets/authentication.js"></script>
+
+
+<!-- icons script -->
+    <script src="https://kit.fontawesome.com/4aa734da70.js"
+      crossorigin="anonymous"></script>
+    <script type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

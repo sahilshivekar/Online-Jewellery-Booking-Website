@@ -1,0 +1,318 @@
+/*
+!user dashboad starts_______________________________________________________________________________________________________
+*/
+
+.user-dash-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.user-dash-container {
+  max-width: 1700px;
+  position: relative;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/* .my-account-text{
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
+    border-bottom: 1px solid var(--lightest-border);
+    line-height: 70px;
+} */
+.user-dash-section .heading {
+  width: 100%;
+  text-align: left;
+  font-size: 2rem;
+  color: var(--dark-theme);
+  line-height: 40px;
+  padding-left: 20px;
+  margin: 20px 0px;
+  font-weight: bold;
+}
+.user-dash-section .acc-over {
+  width: 100%;
+  height: max-content;
+}
+.user-dash-section .details-container {
+  margin: 20px 20px;
+  border: 2px solid var(--light-theme);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.user-dash-section .details-header {
+  display: flex;
+  flex-direction: row;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 60px;
+  background-color: var(--light-theme);
+}
+.user-dash-section .details-header .header-left {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  line-height: 60px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--dark-theme);
+}
+.user-dash-section .details-header .header-right {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.user-dash-section .logout-div button,
+.edit-div button {
+  height: 40px;
+  width: 110px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.user-dash-section .logout-div button {
+  border: 1.5px solid var(--dark-theme);
+  background-color: var(--dark-theme);
+  color: white;
+  font-weight: 600;
+}
+.user-dash-section .logout-div button:hover {
+  background-color: var(--dark-theme-hover);
+}
+.user-dash-section .edit-div button {
+  border: 1.5px solid var(--dark-theme);
+  background-color: white;
+  color: var(--dark-theme);
+  font-weight: 600;
+}
+.user-dash-section .edit-div button:hover {
+  background-color: var(--white-theme-hover);
+}
+.user-dash-section .details-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.user-dash-section .details-body .pair {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.user-dash-section .details-body .pair .key {
+  font-weight: 100;
+  width: 200px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.user-dash-section .details-body .pair .colon {
+  font-weight: 100;
+  margin: 0px 10px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.user-dash-section .details-body .pair .value {
+  font-weight: bolder;
+}
+
+/*
+!user dashboad ends_______________________________________________________________________________________________________
+*/
+
+/*
+!edit popup starts_______________________________________________________________________________________________________
+*/
+
+.edit-popup-section {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: rgba(0, 0, 0, .5);
+    transform: scale(1.25);
+    transition: .5s ease-in-out;
+}
+.edit-popup-section.active {
+  opacity: 1;
+  z-index: 1000;
+  transform: scale(1);
+  transition: .5s ease-in-out;
+}
+.edit-popup-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  max-height: max-content;
+  height: max-content;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+.personal-edit-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.personal-edit-div .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 60px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--dark-theme);
+  margin: 0px 20px;
+  border-bottom: 1.5px solid var(--lightest-border);
+}
+.personal-edit-div .body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.personal-edit-div .input-div {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  padding: 0px 20px;
+}
+.personal-edit-div .input-div div {
+  margin-bottom: 10px;
+}
+.personal-edit-div .input-div input {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: 1.5px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  padding: 10px;
+  color: black;
+  font-size: 1.2rem;
+}
+.personal-edit-div .input-div p{
+  height: 10px;
+  margin-top: 5px;
+  color: red;
+  font-weight: lighter;
+  font-size: .9rem;
+  line-height: 5px;
+}
+.contact-edit-div .input-div p{
+  height: 10px;
+  margin-top: 5px;
+  color: red;
+  font-weight: lighter;
+  font-size: .9rem;
+  line-height: 5px;
+}
+/*------------------------*/
+.contact-edit-div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.contact-edit-div .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 60px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--dark-theme);
+  border-bottom: 1.5px solid var(--lightest-border);
+  margin: 0px 20px;
+}
+.contact-edit-div .body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contact-edit-div .input-div {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  padding: 0px 20px;
+}
+.contact-edit-div .input-div div {
+  margin-bottom: 10px;
+}
+.contact-edit-div .input-div input {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: 1.5px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  padding: 10px;
+  color: black;
+  font-size: 1.2rem;
+}
+/*---------------*/
+.edit-decision-div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  margin-left: 20px;
+}
+.edit-decision-div .save-edit button,
+.cancel-edit button {
+  height: 40px;
+  width: 110px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.edit-decision-div .save-edit button {
+  border: 1.5px solid var(--dark-theme);
+  background-color: var(--dark-theme);
+  color: white;
+  font-weight: 600;
+  margin-right: 20px;
+}
+.edit-decision-div .save-edit button:hover {
+  background-color: var(--dark-theme-hover);
+}
+.edit-decision-div .cancel-edit button {
+  border: 1.5px solid var(--dark-theme);
+  background-color: white;
+  color: var(--dark-theme);
+  font-weight: 600;
+}
+.edit-decision-div .cancel-edit button:hover {
+  background-color: var(--white-theme-hover);
+}
+/* making non editable email id grey */
+.input-div .disable-edit{
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: not-allowed;
+}
+/*
+!edit popup ends_______________________________________________________________________________________________________
+*/

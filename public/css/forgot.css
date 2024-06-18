@@ -1,0 +1,85 @@
+.forgot-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forgot-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.forgot-heading {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  border-bottom: 2px solid var(--lightest-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forgot-heading p {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--dark-theme);
+  font-weight: bold;
+}
+
+.forgot-body {
+  width: 500px;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  border: 2px solid var(--light-theme);
+  border-radius: 10px;
+}
+.forgot-section .input-div{
+    width: 100%;
+    padding: 0px 20px;
+    font-size: 1.3rem;
+    margin: 20px 0px;
+}
+.forgot-section .input-div label{
+    margin-bottom: 10px;
+    color: var(--dark-theme);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.forgot-section .input-div .email-input{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    outline: none;
+    padding: 10px;
+    color: black;
+    font-size: 1.2rem;
+}
+.forgot-section .button-div{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content:right;
+}
+.forgot-section .button-div button{
+    box-sizing: border-box;
+    width: 35%;
+    height: 45px;
+    border: 2px solid var(--dark-theme);
+    font-size: 1.3rem;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--dark-theme);
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.forgot-section .button-div button:hover{
+    background-color: var(--dark-theme-hover);
+}

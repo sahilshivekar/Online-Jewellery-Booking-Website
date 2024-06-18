@@ -1,0 +1,60 @@
+/*
+!pages link below navbar starts_________________________________________________________________________________________
+*/
+.page-links-section{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-links-div{
+    max-width: 1700px;
+    width: 100%;
+    /* background-color: var(--dark-theme); */
+    
+}
+.page-links-center-elements{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--light-theme);
+}
+.page-links-text{
+    /* width: 100%; */
+    line-height: 3rem;
+    text-align: center;
+    color: var(--dark-theme);
+    font-weight: lighter;
+    text-decoration: none;
+}
+/* .page-links-text:hover{
+    color: var(--dark-theme);
+    text-decoration: underline;
+} */
+
+
+.page-links-box{
+    cursor: pointer;
+    height: 2.8rem;
+    width: 100%;
+    border: 3px solid transparent;
+    /* border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem; */
+    font-size: 1.3rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    transition: 0.2s ease;
+}
+.page-links-box:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+    color: var(--dark-theme);
+    /* transform: scale(1.05); */
+    transition: 0.2s ease;
+    border-bottom: 3px solid var(--dark-theme);
+    /* border-right: 2px solid white;
+    border-left: 2px solid white; */
+}
+/*
+!pages link below navbar ends_________________________________________________________________________________________
+*/

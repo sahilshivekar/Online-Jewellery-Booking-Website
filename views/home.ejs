@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OJB</title>
+    <link rel="stylesheet" href="/css/home.css">
+
+    <link rel="stylesheet" href="css/universal.css">
+    <link rel="stylesheet" href="css/assets/navbar.css">
+    <link rel="stylesheet" href="css/assets/footer.css">
+    <link rel="stylesheet" href="css/assets/typeLinks.css">
+    <link rel="stylesheet" href="css/assets/authentication.css">
+  </head>
+
+  <body>
+
+    <header>
+      <%- include('assets/navbar') %>
+      <%- include('assets/typeLinks') %>
+    </header>
+    <main>
+      <!-- 
+        !slider starts
+       -->
+      <section class="slider-section">
+        <div class="slider-container">
+          <div class="slider-list-container">
+            <div class="slider-item">
+              <img src="/images/slider-1-final.png" alt>
+            </div>
+            <div class="slider-item">
+              <img src="/images/slider-2-final.png" alt>
+            </div>
+            <div class="slider-item">
+              <img src="/images/slider-3-final.png" alt>
+            </div>
+
+          </div>
+
+          <button class="slider-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="slider-next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <div class="slider-dots">
+            <div class="active"></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+      <!-- 
+        !slider ends
+       -->
+      <!-- 
+        !Most Favourites starts
+       -->
+      <section class="fav-section">
+        <div class="fav-container">
+
+          <!--heading-->
+          <div class="fav-heading heading-of-sections">
+            <div>Most Favourites</div>
+            <p>Check out most favourites Jewelleries of our customers!</p>
+            <img src="/images/heading-end.png" alt="failed to load">
+          </div>
+
+          <!--Cards container-->
+          <div class="j-cards-outside-container">
+            <!--j-card-buttons-->
+            <div id="fav-prev" class="fav-buttons">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div id="fav-next" class="fav-buttons">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="j-cards-container">
+
+            </div>
+            <!--scrollbar-->
+            <div class="fav-scrollbar">
+              <div class="fav-scrollbar-track">
+                <div class="fav-scrollbar-thumb">
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- 
+        !Most Favourites ends
+       -->
+      <!--
+        !Shop by category starts
+      -->
+      <section class="shop-category-section">
+        <div class="shop-category-container">
+
+          <!--Shop by heading-->
+          <div class="shop-category-heading heading-of-sections">
+            <div>Shop by Category</div>
+            <p>Browse through your favourite categories!</p>
+            <img src="/images/heading-end.png" alt="failed to load">
+          </div>
+
+          <div class="shop-category-cards-container">
+            <div class="shop-category-card shop-rings">
+              <img src="/images/rings/ring2a.png"
+                alt="failed to load image">
+              <div class="shop-category-card-name">
+
+                <div>Rings</div>
+              </div>
+            </div>
+            <div class="shop-category-card shop-necklaces">
+              <img src="/images/necklaces/necklace1a.png"
+                alt="failed to load image">
+              <div class="shop-category-card-name">
+                <div>Necklaces</div>
+              </div>
+
+            </div>
+            <div class="shop-category-card shop-chains">
+              <img src="/images/homeCategory/chains.png"
+                alt="failed to load image">
+              <div class="shop-category-card-name">
+
+                <div>Chains</div>
+              </div>
+            </div>
+            <div class="shop-category-card shop-earrings">
+              <img src="/images/homeCategory/earrings.png"
+                alt="failed to load image">
+              <div class="shop-category-card-name">
+
+                <div>Earrings</div>
+              </div>
+            </div>
+            <div class="shop-category-card shop-pendants">
+              <img src="/images/homeCategory/pendants.png"
+                alt="failed to load image">
+              <div class="shop-category-card-name">
+
+                <div>Pendants</div>
+              </div>
+            </div>
+            <div class="shop-category-card shop-bracelets">
+              <img src="/images/bracelets/bracelet1a.png"
+                alt="failed to load image">
+              <div class="shop-category-card-name">
+
+                <div>Bracelets</div>
+              </div>
+            </div>
+            <div class="shop-category-card shop-nosepins">
+              <img src="/images/homeCategory/nosePins.png"
+                alt="failed to load image">
+              <div class="shop-category-card-name">
+
+                <div>Nose Pins</div>
+              </div>
+            </div>
+            <div class="shop-category-card shop-bangles">
+              <img src="/images/bangles/bangle1a.png"
+                alt="failed to load image">
+              <div class="shop-category-card-name">
+
+                <div>Bangles</div>
+              </div>
+            </div>
+            <div class="shop-category-card shop-goldcoins">
+              <img src="/images/homeCategory/goldCoins.png"
+                alt="failed to load image">
+              <div class="shop-category-card-name">
+
+                <div>Gold Coins</div>
+              </div>
+            </div>
+            <div class="shop-category-card shop-mangalsutras">
+              <img src="/images/homeCategory/mangalsutras.png"
+                alt="failed to load image">
+              <div class="shop-category-card-name">
+
+                <div>Mangalsutras</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+      <!--
+        !Shop by category ends
+      -->
+      <!--
+        !top sellers starts
+      -->
+      <section class="top-sellers-section">
+        <div class="top-sellers-container">
+
+          <!--heading-->
+          <div class="top-sellers-heading heading-of-sections">
+            <div>Top Sellers</div>
+            <p>Check out most sold Jewelleries!</p>
+            <img src="/images/heading-end.png" alt="failed to load">
+          </div>
+
+          <!--Cards container-->
+          <div class="top-sellers-cards-outside-container">
+            <!--top-sellers-card-buttons-->
+            <div id="top-sellers-prev" class="top-sellers-buttons">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div id="top-sellers-next" class="top-sellers-buttons">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="j-cards-container">
+
+            </div>
+            <!--scrollbar-->
+            <div class="top-sellers-scrollbar">
+              <div class="top-sellers-scrollbar-track">
+                <div class="top-sellers-scrollbar-thumb">
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!--
+        !top sellers ends
+      -->
+
+      <!--
+        !Shop-by-gender-starts
+      -->
+      <section class="shop-gender-section">
+        <div class="shop-gender-container">
+
+          <div class="top-sellers-heading heading-of-sections">
+            <div>Shop by Gender</div>
+            <p>First-class jewelry for first-class Men, Women & Children.!</p>
+            <img src="/images/heading-end.png" alt="failed to load">
+          </div>
+
+          <div class="shop-gender-card-container">
+
+            <div class="shop-gender-card men-gender">
+              <img src="/images/men-gender-jewellery.png" alt="failed to load">
+              <div class="shop-gender-card-name">
+                <div>Men</div>
+                <p>Explore <i class="fa-solid fa-chevron-right"></i> </p>
+              </div>
+            </div>
+
+            <div class="shop-gender-card unisex-gender">
+              <img src="/images/unisex-gender-jewellery.png" alt="failed to load">
+              <div class="shop-gender-card-name">
+                <div>Unisex</div>
+                <p>Explore <i class="fa-solid fa-chevron-right"></i> </p>
+              </div>
+            </div>
+
+            <div class="shop-gender-card women-gender">
+              <img src="/images/women-gender-jewellery.png"
+                alt="failed to load">
+              <div class="shop-gender-card-name">
+                <div>Women</div>
+                <p>Explore <i class="fa-solid fa-chevron-right"></i> </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!--
+        !Shop-by-gender-ends
+      -->
+      <!-- adding all authentication login signup of user, sk , imgr -->
+      <%- include('assets/authentication') %>
+    </main>
+    <%- include('assets/footer') %>
+
+    <script src="/js/home.js"></script>
+    <script src="/js/assets/navbar.js"></script>
+    <script src="/js/assets/typeLinks.js"></script>
+    <script src="/js/assets/authentication.js"></script>
+
+    <!-- icons script -->
+    <script src="https://kit.fontawesome.com/4aa734da70.js"
+      crossorigin="anonymous"></script>
+    <script type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

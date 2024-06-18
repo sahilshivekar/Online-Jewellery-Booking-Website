@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OJB</title>
+        <link rel="stylesheet" href="/css/jList.css">
+
+        <link rel="stylesheet" href="css/universal.css">
+        <link rel="stylesheet" href="css/assets/footer.css">
+        <link rel="stylesheet" href="css/assets/navbar.css">
+        <link rel="stylesheet" href="css/assets/typeLinks.css">
+        <link rel="stylesheet" href="css/assets/authentication.css">
+    </head>
+    <body>
+        <header>
+            <%- include('assets/navbar') %>
+            <%- include('assets/typeLinks') %>
+        </header>
+
+        <main>
+            <!-- filter and sort row -->
+            <section class="filter-sort-section">
+                <div class="filter-sort-div">
+
+                    <!-- Heading********************** -->
+                    <!-- <div class="heading">
+                        <p></p>
+                    </div> -->
+
+                    <!-- filter and sort in one row -->
+                    <div class="filter-sort-row">
+
+                        <!-- filter -->
+
+                        <button class="filter-button">
+                            <i class="fa-solid fa-sliders"></i>
+                            <p>Filter</p>
+                        </button>
+
+                        <!-- sort -->
+                        <div class="sort">
+                            <label class="sort-text">
+                                Sort by:
+                            </label>
+                            <div class="sort-dropdown">
+                                <div class="select">
+                                    <div class="selected">Most Favourites</div>
+                                    <i class="fa-solid fa-sort"></i>
+                                </div>
+                                
+                                <ul class="menu">
+                                    <li id="best-sellers" class="first">Best Sellers</li>
+                                    <li id="higher-quantity">Higher Quantity</li>
+                                    <li id="gold-purity">Gold Purity</li>
+                                    <li id="diamond-weight">Diamond Weight</li>
+                                    <li id="most-favourites" class="active">Most Favourites</li>
+                                    <li id="low-to-high">Price:Low to High</li>
+                                    <li id="high-to-low" class="last">Price:High to Low</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- filter popup section -->
+            <section class="filter-popup-section">
+                <div class="filter-popup-container">
+
+                    <form method="post" action="/jlist" class="filter-form">
+
+                        <!-- heading and close button of popup -->
+                        <div class="heading-and-close">
+                            <div class="heading">
+                                <i class="fa-solid fa-sliders"></i>
+                                <p>Filter</p>
+                            </div>
+                            <div class="close-filter">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </div>
+
+                        <!-- list of options -->
+                        <div class="filter-options">
+
+                            <div class="category filter-option">
+
+                                <div class="category show-filter-option">
+                                    <div class="option-text">
+                                        Jewellery Category
+                                    </div>
+                                    <div class="category option-caret">
+                                        <i class="fa-solid fa-caret-up"></i>
+                                    </div>
+                                </div>
+
+                                <div class="category input-filter-option">
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="rings"
+                                            name="category">Rings
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="necklaces"
+                                            name="category">Necklaces
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="goldcoins"
+                                            name="category">Gold Coins
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="earrings"
+                                            name="category">Earrings
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="pendants"
+                                            name="category">Pendants
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="bracelets"
+                                            name="category">Bracelets
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="chains"
+                                            name="category">Chains
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="bangles"
+                                            name="category">Bangles
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="nosepins"
+                                            name="category">Nose Pins
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="mangalsutras"
+                                            name="category">Mangalsutras
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="type filter-option">
+                                <div class="type show-filter-option">
+                                    <div class="option-text">
+                                        Jewellery Type
+                                    </div>
+                                    <div class="type option-caret">
+                                        <i class="fa-solid fa-caret-up"></i>
+                                    </div>
+                                </div>
+
+                                <div class="type input-filter-option">
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="gold"
+                                            name="type">Gold
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="diamond"
+                                            name="type">Diamond
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="silver"
+                                            name="type">Silver
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="purity filter-option">
+                                <div class="purity show-filter-option">
+                                    <div class="option-text">
+                                        Gold Purity
+                                    </div>
+                                    <div class="purity option-caret">
+                                        <i class="fa-solid fa-caret-up"></i>
+                                    </div>
+                                </div>
+                                <div class="purity input-filter-option">
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="9"
+                                            name="purity">9
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="10"
+                                            name="purity">10
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="14"
+                                            name="purity">14
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="18"
+                                            name="purity">18
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="22"
+                                            name="purity">22
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="24"
+                                            name="purity">24
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="price filter-option">
+                                <div class="price show-filter-option">
+                                    <div class="option-text">
+                                        Price
+                                    </div>
+                                    <div class="price option-caret">
+                                        <i class="fa-solid fa-caret-up"></i>
+                                    </div>
+                                </div>
+                                <div class="price input-filter-option">
+                                    <div class="input-number">
+                                        <input type="number" name="minPrice"
+                                            placeholder="&#8377;">
+                                    </div>
+                                    <p>to</p>
+                                    <div class="input-number">
+                                        <input type="number" name="maxPrice"
+                                            placeholder="&#8377;">
+                                    </div>
+
+                                </div>
+                            </div> -->
+                            <div class="gender filter-option">
+                                <div class="gender show-filter-option">
+                                    <div class="option-text">
+                                        Gender
+                                    </div>
+                                    <div class="gender option-caret">
+                                        <i class="fa-solid fa-caret-up"></i>
+                                    </div>
+                                </div>
+                                <div class="gender input-filter-option">
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="male"
+                                            name="purity">Men
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="female"
+                                            name="purity">Women
+                                    </div>
+                                    <div class="input-checkbox">
+                                        <input type="checkbox" value="unisex"
+                                            name="purity">Unisex
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- reset all and show filtered buttons -->
+                        <div class="filter-buttons">
+                            <div class="reset-div">
+                                <button type="reset">Reset all</button>
+                            </div>
+                            <div class="submit-div">
+                                <button id="filterSubmit" type="submit">Show Result</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- cards showing -->
+            <section class="cards-section">
+                <div class="cards-div">
+
+                    <!-- card******************************************
+                    
+                    <div class="j-card" >
+                        <input class="j-id" type="hidden" value=${jewellery._id}>
+                        <div class="add-fav">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+            
+                        <div class="j-card-element-img">
+                            <img class="img1" src=${jewellery.picture1}>
+                            <img class="img2" src=${jewellery.picture2}>
+                        </div>
+            
+                        <div class="j-card-element">
+                            <div class="name">
+                                ${jewellery.name}
+                            </div>
+                        </div>
+            
+                        <div class="j-card-element">
+                            <div class="price">
+                                &#8377;${jewellery.price}
+                            </div>
+                        </div>
+            
+                    </div> -->
+
+                    
+                </div>
+            </section>
+            <!-- adding all authentication login signup of user, sk , imgr -->
+            <%- include('assets/authentication') %>
+        </main>
+
+        <%- include('assets/footer') %>
+
+        <script src="/js/jList.js"></script>
+        <script src="/js/assets/navbar.js"></script>
+        <script src="/js/assets/typeLinks.js"></script>
+        <script src="/js/assets/authentication.js"></script>
+
+        <!-- icons script -->
+        <script src="https://kit.fontawesome.com/4aa734da70.js"
+            crossorigin="anonymous"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

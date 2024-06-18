@@ -1,0 +1,342 @@
+.show-section .heading {
+  width: 100%;
+  text-align: left;
+  font-size: 2rem;
+  color: var(--dark-theme);
+  line-height: 40px;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid var(--lightest-border);
+}
+.show-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.show-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1700px;
+}
+.show-list {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* if no jewellery is there */
+.no-jewellery {
+  color: grey;
+  font-style: italic;
+  width: 100%;
+  text-align: left;
+  margin: 20px;
+  font-size: 1.3rem;
+  margin-bottom: 300px;
+}
+
+/* list of bookings**************************************** */
+
+.item-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid var(--lightest-border);
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.item-container:hover {
+  box-shadow: 3px 3px 6px var(--card-hover);
+  transform: scale(1.005);
+  transition: 0.25s ease-in-out;
+}
+
+.item-container .image2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-container .image2 > img:first-child {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  z-index: 0;
+  border: 1.5px solid var(--dark-theme);
+  transition: .25s ease-in-out;
+}
+.item-container .image2:hover > img:last-child {
+    opacity: 1;
+    z-index: 0;
+}
+.item-container .image2:hover > img:first-child {
+    opacity: 0;
+    z-index: -1;
+}
+.item-container .image2 > img:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  border: 1.5px solid var(--dark-theme);
+  transition: .25s ease-in-out;
+
+}
+
+.item-container .details-label {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: max-content;
+  height: 200px;
+  margin-left: 20px;
+}
+
+.item-container .details-colon {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: max-content;
+  height: 200px;
+  margin-left: 20px;
+}
+
+.item-container .details-value {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: max-content;
+  height: 200px;
+  margin-left: 20px;
+}
+
+.item-container .details-label .check-details-div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+
+.item-container .details-colon .check-details-div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+.item-container .details-value .check-details-div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+/* last element id removing */
+.item-container .details-colon > div:last-child,
+.item-container .details-value > div:last-child,
+.item-container .details-label > div:last-child {
+  padding-bottom: 0px;
+}
+
+
+.item-container .cancel-booking{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  right: 15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 4px rgb(0, 0, 0,0.3);
+  transform: scale(1);
+  transition: .2s ease-in-out;
+}
+.item-container .cancel-booking i{
+  color: var(--dark-theme);
+  font-size: 1.3rem;
+}
+.item-container .cancel-booking:hover{
+  transform: scale(1.1);
+  transition: .2s ease-in-out;
+}
+
+
+/* popup confirm cancellatino */
+
+.cancel-booking-section {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  /* transform: scale(1.25); */
+  transition: .5s ease-in-out;
+  
+}
+.cancel-booking-section.active {
+  opacity: 1;
+  top: 0px;
+  /* transform: scale(1); */
+  transition: .5s ease-in-out;              
+  
+}
+.cancel-booking-container {
+  position: relative;
+  height: max-content;
+  width: 600px;
+  max-height: 500px;
+  max-width: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.cancel-booking-container .dark-upper-container {
+  color: white;
+  background-color: var(--dark-theme);
+  font-family: "Cinzel Decorative", serif;
+  line-height: 80px;
+  text-align: center;
+  font-size: 2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cancel-booking-container .details-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  padding: 30px 30px 0px 30px;
+}
+
+.cancel-booking-container .image-of-jewellery {
+  margin-top: .5px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.cancel-booking-container .image-of-jewellery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border: 1.5px solid var(--dark-theme);
+  border-radius: 5px;
+}
+
+.cancel-booking-container .details-info-only {
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+  width: max-content;
+  height: 200px;
+  margin-left: 20px;
+}
+
+.cancel-booking-container .details-info-only .cancel-booking-div {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cancel-booking-container .details-info-only .cancel-booking-div label {
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+
+.cancel-booking-container .cancel-booking-buttons {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.cancel-booking-container .cancel-booking-buttons button {
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid var(--dark-theme);
+  height: 40px;
+  width: 48%;
+  cursor: pointer;
+}
+
+.cancel-booking-container .cancel-booking-buttons .no-btn {
+  color: var(--dark-theme);
+  background-color: white;
+  transition: 0.3s ease;
+}
+.cancel-booking-container .cancel-booking-buttons .no-btn:hover {
+  background-color: var(--white-theme-hover);
+}
+
+.cancel-booking-container .cancel-booking-buttons .cancel-btn {
+  color: white;
+  background-color: var(--dark-theme);
+  transition: 0.3s ease;
+}
+
+.cancel-booking-container .cancel-booking-buttons .cancel-btn:hover {
+  background-color: var(--dark-theme-hover);
+}

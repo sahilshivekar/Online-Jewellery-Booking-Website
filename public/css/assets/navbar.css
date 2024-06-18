@@ -1,0 +1,216 @@
+
+
+/* 
+!navbar starts____________________________________________________________________________________________________
+*/
+
+#navbar-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbar-container{
+    position: fixed;
+    top: 0;
+    height: 80px;
+    z-index:100;
+    max-width: 1700px;
+    width: 100%;
+    background-color: var(--light-theme);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-position-part{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.navbar-text{
+    color: var(--dark-theme);
+    font-size: 1rem;
+}
+.navbar-box-height{
+    height: 3.5rem;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* #jewelaura-logo-div{
+    
+} */
+#jewelaura-logo{
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/ojb-logo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#jewelaura-logo-div{
+    height: 3rem;
+    width: 11rem;
+}
+
+#center-search{
+    width: 100%;
+}
+#search-bar-container{
+    width: 100%;
+    height: 100%;
+}
+#search-bar-input-div{
+    width: 100%;
+    height: 100%;
+}
+#search-bar-input{
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: lighter;
+    border: none;
+    outline: none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    background-color: white;
+    color: var(--dark-theme);
+    padding-left: 1rem;
+    cursor: text;
+}
+#search-logo-div{
+    width: 3.5rem;
+    background-color: var(--dark-theme);
+    height: 100%;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    transition: 0.4s ease;
+    border: none;
+    cursor: pointer;
+}
+#search-logo-div:hover{
+    background-color: var(--dark-theme-hover);
+}
+
+#search-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 1.7rem;
+    transition: .4s ease;
+    color: var(--light-theme);
+}
+
+#right-search-userProfile{
+    width: 300px;
+    box-sizing: border-box; 
+    margin-right: 1rem;
+}
+#right-search-empty{
+    width: 100px;
+    box-sizing: border-box; 
+    margin-right: 1rem;
+}
+#favorites-div{
+    box-sizing: border-box;
+    width: 33%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    text-decoration: none;
+    color: var(--dark-theme);
+    cursor: pointer;
+}
+#bookings-div{
+    box-sizing: border-box;
+    width: 33%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    text-decoration: none;
+    color: var(--dark-theme);
+    cursor: pointer;
+}
+#account-div-empty{
+    color: var(--dark-theme);
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    cursor: pointer;
+
+}
+#account-div-userProfile{
+    color: var(--dark-theme);
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 33%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    cursor: pointer;
+}
+#account-div-skProfile{
+    color: var(--dark-theme);
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 33%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    cursor: pointer;
+}
+#account-div-imgrProfile{
+    color: var(--dark-theme);
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 33%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    cursor: pointer;
+}
+#favorites-logo{
+    font-size: 1.7rem;
+    color: var(--dark-theme);
+    height: 100%;
+}
+#bookings-logo{
+    font-size: 1.7rem;
+    color: var(--dark-theme);
+    height: 100%;
+}
+#account-logo{
+    font-size: 1.7rem;
+    color: var(--dark-theme);
+    height: 100%;
+}
+.shadow-navbar-box{
+    border-radius: 0.5rem;
+    transition: 0.2s ease;
+    border: 0.1rem solid transparent;
+}
+.shadow-navbar-box:hover{
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--dark-theme);
+
+}
+/*
+!navbar ends_______________________________________________________________________________________________________
+*/
+
+

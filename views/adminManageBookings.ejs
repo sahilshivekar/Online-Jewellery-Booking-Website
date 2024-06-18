@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OJB</title>
+
+        <!-- universal and headers css -->
+        <link rel="stylesheet" href="css/universal.css">
+        <link rel="stylesheet" href="css/adminManageBookings.css">
+        <link rel="stylesheet" href="css/assets/adminHeaders.css">
+
+        <!-- for that canva poster font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+            rel="stylesheet">
+        <!-- "Cinzel Decorative", serif; -->
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                Admin Features
+            </div>
+            <section class="current-option">
+                | Manage Bookings
+            </section>
+        </header>
+        <main>
+
+            <section id="search-j-section">
+                
+                <form action="/navbar" method="post" id="search-bar-container"
+                    class=" flex-center">
+                    <div id="search-bar-input-div" class="flex-center">
+                        <input type="text" id="search-bar-input"
+                            name="searchInput"
+                            placeholder="Search user and jewelleries here...">
+                    </div>
+                    <button type="submit" id="search-logo-div"
+                        class="nabbar-box-height flex-center">
+                        <i id="search-logo"
+                            class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </section>
+            <section class="show-section">
+                <div class="show-div">
+                    <!-- Heading********************** -->
+                    <!-- <div class="heading">
+                        <p>Bookings</p>
+                    </div> -->
+                    <div class="show-list">
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="cancel-booking-section">
+                <div class="cancel-booking-container">
+
+                    <div class="dark-upper-container">
+                        Cancel Booking
+                    </div>
+                    <div class="details-container-parent">
+                        <div class="details-container">
+                            <div class="image-of-jewellery">
+                                <img src
+                                    alt="failed to load">
+                            </div>
+
+                            <div class="details-info-only">
+                                <!-- <div class="booking-id cancel-booking-div"> 
+                                    <label>Booking ID: </label>
+                                    <p></p>
+                                </div>  -->
+                                <div class="booking-name cancel-booking-div">
+                                    <label>Jewellery Name: </label>
+                                    <p></p>
+                                </div>
+                                <div class="booking-qty cancel-booking-div">
+                                    <label>Quantity: </label>
+                                    <p></p>
+                                </div>
+                                <div
+                                    class="booking-category cancel-booking-div">
+                                    <label>Category: </label>
+                                    <p></p>
+                                </div>
+                                <div class="booking-price cancel-booking-div">
+                                    <label>Total Price: </label>
+                                    <p>&#8377;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cancel-booking-buttons">
+
+                            <button class="cancel-btn">Cancel</button>
+
+                            <button class="no-btn">No</button>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mark-booking-section">
+                <div class="mark-booking-container">
+
+                    <div class="dark-upper-container">
+                        Mark as Sold
+                    </div>
+                    <div class="details-container-parent">
+                        <div class="details-container">
+                            <div class="image-of-jewellery">
+                                <img src
+                                    alt="failed to load">
+                            </div>
+
+                            <div class="details-info-only">
+                                <!-- <div class="booking-id cancel-booking-div"> 
+                                    <label>Booking ID: </label>
+                                    <p></p>
+                                </div>  -->
+                                <div class="booking-name mark-booking-div">
+                                    <label>Jewellery Name: </label>
+                                    <p></p>
+                                </div>
+                                <div class="booking-qty mark-booking-div">
+                                    <label>Quantity: </label>
+                                    <p></p>
+                                </div>
+                                <div
+                                    class="booking-category mark-booking-div">
+                                    <label>Category: </label>
+                                    <p></p>
+                                </div>
+                                <div class="booking-price mark-booking-div">
+                                    <label>Total Price: </label>
+                                    <p>&#8377;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mark-booking-buttons">
+
+                            <button class="mark-btn">Yes</button>
+
+                            <button class="no-btn">No</button>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dark">
+            
+            </section>
+        </main>
+
+        <script src="/js/adminManageBookings.js"></script>
+
+        <!-- icons script -->
+        <script src="https://kit.fontawesome.com/4aa734da70.js"
+            crossorigin="anonymous"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

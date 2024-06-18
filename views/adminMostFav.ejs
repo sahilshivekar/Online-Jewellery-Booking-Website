@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OJB</title>
+
+        <!-- universal and headers css -->
+        <link rel="stylesheet" href="css/universal.css">
+        <link rel="stylesheet" href="css/adminMostFav.css">
+        <link rel="stylesheet" href="css/assets/adminHeaders.css">
+
+        <!-- for that canva poster font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+            rel="stylesheet">
+        <!-- "Cinzel Decorative", serif; -->
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                Admin Features
+            </div>
+            <section class="current-option">
+                | Most Favourites
+            </section>
+        </header>
+        <main>
+
+            <section id="search-j-section">
+                
+                <form action="/navbar" method="post" id="search-bar-container"
+                    class=" flex-center">
+                    <div id="search-bar-input-div" class="flex-center">
+                        <input type="text" id="search-bar-input"
+                            name="searchInput"
+                            placeholder="Search a jewellery here...">
+                    </div>
+                    <button type="submit" id="search-logo-div"
+                        class="nabbar-box-height flex-center">
+                        <i id="search-logo"
+                            class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </section>
+
+            <section class="show-section">
+                <div class="show-div">
+                    <!-- Heading********************** -->
+                    <!-- <div class="heading">
+                        <p>Bookings</p>
+                    </div> -->
+                    <div class="show-list">
+                        
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <script src="/js/adminMostFav.js"></script>
+
+        <!-- icons script -->
+        <script src="https://kit.fontawesome.com/4aa734da70.js"
+            crossorigin="anonymous"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

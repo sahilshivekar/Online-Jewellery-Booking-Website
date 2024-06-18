@@ -1,0 +1,156 @@
+/* 
+!universal properties and variables declaration starts_________________________________________________________________________________________
+*/
+:root {
+  --main-to-use-on-tool: #e8a19f;
+  --light-theme: #fbdbd9;
+  --light-theme2: #ffd4d2;
+  --dark-theme: #692220;
+  --dark-theme-hover: #4a1311;
+  --white-theme-hover: #f2f2f2;
+  --dark-theme-click: #955553;
+  --dark-theme-slider: rgba(105, 34, 32, 0.5);
+  --background-light-theme: #ffeeec;
+  --background-light-theme-slider: rgba(255, 238, 236, 0.2);
+  --card-hover: rgba(0, 0, 0, 0.3);
+  --lightest-border: rgba(0, 0, 0, 0.15);
+  --footer: #efe3e3;
+  font-size: 15.5px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
+    Tahoma, sans-serif;
+}
+body {
+  position: relative;
+  height: 100vh;
+}
+
+/*! cards div**************************************** */
+.j-card {
+  position: relative;
+  margin: 20px;
+  width: 300px;
+  height: max-content;
+  border-radius: 10px;
+  border: 2px solid var(--lightest-border);
+  display: flex;
+  /* padding: 10px; */
+  flex-direction: column;
+  box-shadow: 0px 0px 4px rgb(0, 0, 0, 0);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.j-card:hover {
+  /* box-shadow: 2px 2px 4px var(--card-hover); */
+  box-shadow: 0px 0px 7px var(--light-theme);
+  transform: scale(1.015);
+}
+.j-card-element {
+  padding: 5px;
+}
+.j-card-element-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.j-card-element-img .img1,
+.j-card-element-img .img2 {
+  width: 295px;
+  height: 295px;
+  padding: 5px;
+  border-radius: 12px;
+  object-fit: cover;
+  z-index: 2;
+}
+.j-card-element-img .img2 {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.j-card:hover .j-card-element-img .img1 {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.j-card-element .name {
+  color: black;
+  font-size: 1.05rem;
+  font-weight: bolder;
+  max-height: 18px;
+  overflow: hidden;
+}
+.j-card-element .price {
+  color: var(--dark-theme);
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+.add-fav {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.3);
+  transform: scale(1);
+  transition: 0.2s ease-in-out;
+  z-index: 3;
+}
+.add-fav i {
+  color: var(--dark-theme);
+  font-size: 1.4rem;
+  z-index: 3;
+}
+.add-fav:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+  z-index: 3;
+}
+/* 
+!universal properties and variables declaration starts_________________________________________________________________________________________
+*/
+
+.no-jewellery {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: grey;
+  font-style: italic;
+  width: 100%;
+  text-align: left;
+  font-size: 1.3rem;
+  margin-bottom: 300px;
+}
+
+.dark {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  z-index: -10;
+  /* pointer-events: none; */
+  /* transition: 1s ease-in-out; */
+}
+
+.dark.active {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  /* pointer-events: none; */
+  /* transition: 1s ease-in-out; */
+}

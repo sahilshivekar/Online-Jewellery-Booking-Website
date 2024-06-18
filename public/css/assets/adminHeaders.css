@@ -1,0 +1,28 @@
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: max-content;
+    background-color: var(--dark-theme);
+    z-index: 1000;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Cinzel Decorative", serif;
+    line-height: 70px;
+    color: white;
+}
+
+.current-option{
+    background-color: white;
+    color: var(--dark-theme);
+    width: 100%;
+    text-align: left;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid var(--lightest-border);
+}
+

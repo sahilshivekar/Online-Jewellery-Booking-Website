@@ -1,0 +1,979 @@
+
+
+/*
+!login popup starts_______________________________________________________________________________________________
+*/
+
+.login-popup-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transform: scale(1.25);
+    transition: .5s ease-in-out;
+}
+.login-popup-section.active{
+    opacity: 1;
+    z-index: 1000;
+    transform:scale(1);
+    transition: .5s ease-in-out;
+}
+.login-popup-container{
+    position: relative;
+    width: 66%;
+    max-width: 700px;
+    max-height: 450px;
+    height: 66%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-popup-container .close-div{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+    cursor: pointer;
+    
+}
+
+.login-popup-container .close-div i{
+    color: var(--dark-theme);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+.login-popup-container .close-div i:hover{
+    color: var(--dark-theme-hover);
+}
+.login-popup-container .poster{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-popup-container .poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.login-popup-container .input-divs{
+    position: relative;
+    width: 66.66%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-popup-container .input-div{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.login-popup-container .input-div label{
+    margin-bottom: 10px;
+    color: var(--dark-theme);
+    font-weight: 600;
+}
+
+.login-popup-container .input-div .email-input{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    outline: none;
+    padding: 10px;
+    color: black;
+    font-size: 1.2rem;
+}
+.login-popup-container .input-div span{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+.login-popup-container .input-div span button{
+    background-color: white;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 2px solid rgba(0,0,0,0.3);
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    border-right: 2px solid rgba(0,0,0,0.3);
+    border-left: none;
+    height: 100%;
+    width: 45px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--dark-theme);
+    cursor: pointer;
+}
+.login-popup-container .input-div .pass-input{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 2px solid rgba(0,0,0,0.3);
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    border-left: 2px solid rgba(0,0,0,0.3);
+    border-right: none;
+    outline: none;
+    padding: 10px;
+    color: black;
+    font-size: 1.2rem;
+}
+.login-popup-container .input-div div{
+    height: 10px;
+    margin-top: 5px;
+    color: red;
+    font-weight: lighter;
+    font-size: .9rem;
+    line-height: 5px;
+}
+.login-popup-container .button-div{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.login-popup-container .button-div button{
+    box-sizing: border-box;
+    width: 40%;
+    height: 45px;
+    border: 2px solid var(--dark-theme);
+    font-size: 1.3rem;
+    border-radius: 5px;
+    outline: none;
+}
+.login-popup-container .button-div .login{
+    background-color: var(--dark-theme);
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+
+}
+.login-popup-container .button-div .login:hover{
+    background-color: var(--dark-theme-hover);
+}
+
+.login-popup-container .input-divs .user-signup-call{
+    position: absolute;
+    bottom: 3%;
+    color:var(--dark-theme-click);
+    text-decoration: underline;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.login-popup-container .input-divs .user-signup-call:hover{
+    color: var(--dark-theme-hover);
+}
+.login-popup-container .input-divs .informing{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:var(--dark-theme);
+    transition: .3s ease;
+    cursor: pointer;
+    padding-bottom: 30px;
+}
+
+
+/*
+!login popup ends_______________________________________________________________________________________________
+*/
+
+/*
+!choose way starts_______________________________________________________________________________________________
+*/
+.choose-way-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transform: scale(1.25);
+    transition: .5s ease-in-out;
+}
+.choose-way-section.active{
+    opacity: 1;
+    z-index: 1000;
+    transform:scale(1);
+    transition: .5s ease-in-out;
+}
+.choose-way-container{
+    position: relative;
+    width: 90%;
+    max-height: 800px;
+    max-width: 300px;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 0px 40px;
+}
+.choose-way-container .close-div{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+    cursor: pointer;
+    
+}
+
+.choose-way-container .close-div i{
+    color: var(--dark-theme);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+.choose-way-container .close-div i:hover{
+    color: var(--dark-theme-hover);
+}
+.choose-way-container .heading{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--dark-theme);
+    font-weight: 700;
+    margin: 40px 0px;
+}
+.choose-way-container .ways-div{
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choose-way-container .way-div1{
+    color: rgba(0, 0, 0, .5);
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    border-top: 1px solid var(--lightest-border);
+    border-bottom: 1px solid var(--lightest-border);
+}
+.choose-way-container .way-div{
+    cursor: pointer;
+    color: rgba(0, 0, 0, .5);
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    border-bottom: 1px solid var(--lightest-border);
+    transition: 0.3s ease;
+}
+.choose-way-container .way-div:hover{
+    background-color: rgb(0, 0, 0,0.035);
+    border-bottom: 1px solid var(--lightest-border);
+}
+.choose-way-container .icon-div{
+    width: 45px; 
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--light-theme);
+    border-radius: 10px;
+}
+.choose-way-container .way-div i{
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 3px;
+    color: var(--dark-theme);
+}
+.choose-way-container .way-div .icon-text{
+    margin-left: 10px;
+    line-height: 45px;
+    font-size: 1.2rem;
+}
+
+/*
+!choose way ends____________________________________________________________________________________________________
+*/
+
+/*
+!user signup starts____________________________________________________________________________________________________
+*/
+
+.user-signup-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transform: scale(1.25);
+    transition: .5s ease-in-out;
+}
+.user-signup-section.active{
+    opacity: 1;
+    z-index: 1000;
+    transform:scale(1);
+    transition: .5s ease-in-out;
+}
+.user-signup-container{
+    position: relative;
+    width: 66%;
+    max-width: 700px;
+    max-height: 450px;
+    height: 66%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.user-signup-container .popup-close-div{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+    cursor: pointer;
+    
+}
+
+.user-signup-container .popup-close-div i{
+    color: var(--dark-theme);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+}
+.user-signup-container .popup-close-div i:hover{
+    color: var(--dark-theme-hover);
+}
+.user-signup-container .poster{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-signup-container .poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.user-signup-container .input-divs{
+    position: relative;
+    width: 66.66%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.user-signup-container .input-div{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.user-signup-container .input-div label{
+    margin-bottom: 10px;
+    color: var(--dark-theme);
+    font-weight: 600;
+}
+.user-signup-container .input-div .email-input{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    outline: none;
+    padding: 10px;
+    color: black;
+    font-size: 1.2rem;
+}
+.user-signup-container .input-div span{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+.user-signup-container .input-div span button{
+    background-color: white;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 2px solid rgba(0,0,0,0.3);
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    border-right: 2px solid rgba(0,0,0,0.3);
+    border-left: none;
+    height: 100%;
+    width: 45px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--dark-theme);
+    cursor: pointer;
+}
+.user-signup-container .input-div .pass-input{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 2px solid rgba(0,0,0,0.3);
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    border-left: 2px solid rgba(0,0,0,0.3);
+    border-right: none;
+    outline: none;
+    padding: 10px;
+    color: black;
+    font-size: 1.2rem;
+}
+.user-signup-container .input-div div{
+    height: 10px;
+    margin-top: 5px;
+    color: red;
+    font-weight: lighter;
+    font-size: .9rem;
+    line-height: 5px;
+}
+.user-signup-container .button-div{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.user-signup-container .button-div button{
+    box-sizing: border-box;
+    width: 40%;
+    height: 45px;
+    border: 2px solid var(--dark-theme);
+    font-size: 1.3rem;
+    border-radius: 5px;
+    outline: none;
+}
+.user-signup-container .button-div .signup{
+    background-color: var(--dark-theme);
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+
+}
+.user-signup-container .button-div .signup:hover{
+    background-color: var(--dark-theme-hover);
+}
+.user-signup-container .input-divs .user-login-call{
+    position: absolute;
+    bottom: 3%;
+    color:var(--dark-theme-click);
+    text-decoration: underline;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.user-signup-container .input-divs .user-login-call:hover{
+    color: var(--dark-theme-hover);
+}
+.user-signup-container .input-divs .informing{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:var(--dark-theme);
+    transition: .3s ease;
+    cursor: pointer;
+    padding-bottom: 30px;
+}
+
+/*
+!user signup ends____________________________________________________________________________________________________
+*/
+
+
+/*
+!shopkeeper starts____________________________________________________________________________________________________
+*/
+
+.admin-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transform: scale(1.25);
+    transition: .5s ease-in-out;
+}
+
+.admin-section.active{
+    opacity: 1;
+    z-index: 1000;
+    transform:scale(1);
+    transition: .5s ease-in-out;
+}
+.admin-container{
+    position: relative;
+    width: 66%;
+    max-width: 700px;
+    max-height: 450px;
+    height: 66%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.admin-container .popup-close-div{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+    cursor: pointer;
+    
+}
+
+.admin-container .popup-close-div i{
+    color: var(--dark-theme);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+}
+.admin-container .popup-close-div i:hover{
+    color: var(--dark-theme-hover);
+}
+.admin-container .poster{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.admin-container .poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.admin-container .input-divs{
+    position: relative;
+    width: 66.66%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.admin-container .input-div{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.admin-container .input-div label{
+    margin-bottom: 10px;
+    color: var(--dark-theme);
+    font-weight: 600;
+}
+.admin-container .input-div .id-input-admin{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    outline: none;
+    padding: 10px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.admin-container .input-div span{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+.admin-container .input-div span button{
+    background-color: white;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 2px solid rgba(0,0,0,0.3);
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    border-right: 2px solid rgba(0,0,0,0.3);
+    border-left: none;
+    height: 100%;
+    width: 45px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--dark-theme);
+    cursor: pointer;
+}
+.admin-container .input-div .pass-input-admin{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 2px solid rgba(0,0,0,0.3);
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    border-left: 2px solid rgba(0,0,0,0.3);
+    border-right: none;
+    outline: none;
+    padding: 10px;
+    color: black;
+    font-size: 1.2rem;
+}
+.admin-container .input-div div{
+    height: 10px;
+    margin-top: 5px;
+    color: red;
+    font-weight: lighter;
+    font-size: .9rem;
+    line-height: 5px;
+}
+.admin-container .button-div{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.admin-container .button-div button{
+    box-sizing: border-box;
+    width: 40%;
+    height: 45px;
+    border: 2px solid var(--dark-theme);
+    font-size: 1.3rem;
+    border-radius: 5px;
+    outline: none;
+}
+.admin-container .button-div .admin-signin-btn{
+    background-color: var(--dark-theme);
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+
+}
+.admin-container .button-div .admin-signin-btn:hover{
+    background-color: var(--dark-theme-hover);
+}
+.admin-container .input-divs .informing{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:var(--dark-theme);
+    transition: .3s ease;
+    cursor: pointer;
+    padding-bottom: 30px;
+}
+
+
+/*
+!shopkeeper ends____________________________________________________________________________________________________
+*/
+
+
+/*
+!imgr starts____________________________________________________________________________________________________
+*/
+/* 
+.imgr-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transform: scale(1.25);
+    transition: .5s ease-in-out;
+}
+.imgr-section.active{
+    opacity: 1;
+    z-index: 1000;
+    transform:scale(1);
+    transition: .5s ease-in-out;
+}
+.imgr-container{
+    position: relative;
+    width: 66%;
+    max-width: 700px;
+    max-height: 450px;
+    height: 66%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgr-container .popup-close-div{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease;
+    cursor: pointer;
+    
+}
+
+.imgr-container .popup-close-div i{
+    color: var(--dark-theme);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+}
+.imgr-container .popup-close-div i:hover{
+    color: var(--dark-theme-hover);
+}
+.imgr-container .poster{
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgr-container .poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.imgr-container .input-divs{
+    position: relative;
+    width: 66.66%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgr-container .input-div{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.imgr-container .input-div label{
+    margin-bottom: 10px;
+    color: var(--dark-theme);
+    font-weight: 600;
+}
+.imgr-container .input-div .email-input{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    outline: none;
+    padding: 10px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.imgr-container .input-div span{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+.imgr-container .input-div span button{
+    background-color: white;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 2px solid rgba(0,0,0,0.3);
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    border-right: 2px solid rgba(0,0,0,0.3);
+    border-left: none;
+    height: 100%;
+    width: 45px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--dark-theme);
+    cursor: pointer;
+}
+.imgr-container .input-div .pass-input{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 2px solid rgba(0,0,0,0.3);
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+    border-left: 2px solid rgba(0,0,0,0.3);
+    border-right: none;
+    outline: none;
+    padding: 10px;
+    color: black;
+    font-size: 1.2rem;
+}
+.admin-container .input-div div{
+    height: 10px;
+    margin-top: 5px;
+    color: red;
+    font-weight: lighter;
+    font-size: .9rem;
+    line-height: 5px;
+}
+.imgr-container .button-div{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.imgr-container .button-div button{
+    box-sizing: border-box;
+    width: 40%;
+    height: 45px;
+    border: 2px solid var(--dark-theme);
+    font-size: 1.3rem;
+    border-radius: 5px;
+    outline: none;
+}
+.imgr-container .button-div .signup{
+    background-color: var(--dark-theme);
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+
+}
+.imgr-container .button-div .signup:hover{
+    background-color: var(--dark-theme-hover);
+}
+.imgr-container .input-divs .informing{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:var(--dark-theme);
+    transition: .3s ease;
+    cursor: pointer;
+    padding-bottom: 30px;
+} */
+
+
+/*
+!imgr ends____________________________________________________________________________________________________
+*/
+
+
+/*
+!already admin in starts____________________________________________________________________________________________________
+*/
+
+
+.already-in-section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+    transform: scale(1.25);
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+.already-in-section.active{
+    transform: scale(1);
+    opacity: 1;
+    z-index: 1000;
+    transition: .5s ease-in-out;
+}
+.already-in-container{
+    position: relative;
+    width: 66%;
+    font-size: 1.5rem;
+    color: grey;
+    font-style: italic;
+    max-width: 700px;
+    max-height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.already-in-container .message{
+    padding: 10px;
+}

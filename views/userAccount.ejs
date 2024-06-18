@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User account</title>
+        <link rel="stylesheet" href="css/userAccount.css">
+
+        <link rel="stylesheet" href="css/universal.css">
+        <link rel="stylesheet" href="css/assets/footer.css">
+        <link rel="stylesheet" href="css/assets/navbar.css">
+        <link rel="stylesheet" href="css/assets/typeLinks.css">
+    </head>
+    <body>
+        <header>
+            <%- include('assets/navbar.ejs') %>
+            <%- include('assets/typeLinks.ejs') %>
+        </header>
+
+        <main>
+            <!--
+                !account overview section ends
+            -->
+            <section class="user-dash-section">
+                <div class="user-dash-container">
+                    <div class="acc-over">
+                        <div class="heading">
+                            Account Overview
+                        </div>
+                        <div class="details-container">
+
+                            <div class="details-header">
+                                <div class="header-left">
+                                    <div class="text">
+                                        Personal Information
+                                    </div>
+                                </div>
+                                <div class="header-right">
+                                    <div class="logout-div">
+                                        <button id="logout-user">Logout</button>
+                                    </div>
+                                    <div class="edit-div">
+                                        <button id="edit-btn">Edit
+                                            Details</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="details-body">
+                                <div class="pair">
+                                    <div class="key">
+                                        Full Name
+                                    </div>
+                                    <div class="colon">
+                                        :
+                                    </div>
+                                    <div class="value">
+                                        <% if(user.fullName != null){ %>
+                                        <%= user.fullName %>
+                                        <% } %>
+                                    </div>
+                                </div>
+
+                                <div class="pair">
+                                    <div class="key">
+                                        Date of Birth
+                                    </div>
+                                    <div class="colon">
+                                        :
+                                    </div>
+                                    <div class="value">
+                                        <% if(user.dob != null){ %>
+                                        <%= user.dob.toLocaleDateString() %>
+                                        <% } %>
+                                    </div>
+                                </div>
+
+                                <div class="pair">
+                                    <div class="key">
+                                        Phone Number
+                                    </div>
+                                    <div class="colon">
+                                        :
+                                    </div>
+                                    <div class="value">
+                                        <% if(user.phone != null){ %>
+                                        <%= user.phone %>
+                                        <% } %>
+                                    </div>
+                                </div>
+
+                                <div class="pair">
+                                    <div class="key">
+                                        Email Address
+                                    </div>
+                                    <div class="colon">
+                                        :
+                                    </div>
+                                    <div class="value">
+                                        <% if(user.email != null){ %>
+                                        <%= user.email %>
+                                        <% } %>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="pair">
+                                    <div class="key">
+                                        Total Bookings
+                                    </div>
+                                    <div class="colon">
+                                        :
+                                    </div>
+                                    <div class="value">
+                                        0
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--
+                !account overview section ends
+            -->
+
+            <!--
+                !edit details popup
+            -->
+            <section class="edit-popup-section">
+                <form id="edit-user-form" class="edit-popup-container">
+                    <div class="personal-edit-div">
+                        <div class="header">
+                            Personal Information
+                        </div>
+                        <div class="body">
+                            <div class="fname-div input-div">
+                                <div>Full Name</div>
+                                <input id="fname-input" type="text"
+                                    placeholder="Enter your full name"
+                                    name="fullName" 
+                                    value="<%= user.fullName %>">
+                                <p id="fullName-error"></p>
+                            </div>
+                            <div class="input-div">
+                                <div>Date of Birth</div>
+                                <input id="dob-input" type="date"
+                                    placeholder="Enter your Date of Birth"
+                                    name="dob"
+                                    value="
+                                    <% if(user.dob){ %>
+                                    <%= user.dob.toISOString().split('T')[0] %>
+                                    <% } %>
+                                    ">
+
+                                <p id="dob-error"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-edit-div">
+                        <div class="header">
+                            Contact details
+                        </div>
+                        <div class="body">
+                            <div class="input-div">
+                                <div>Email Address</div>
+                                <input class="disable-edit" id="email-input" type="email"
+                                    placeholder="Enter your email" name="email"
+                                    value="<%= user.email %>" readonly>
+                                <p id="email-error"></p>
+                            </div>
+                            <div class="input-div">
+                                <div>Phone number</div>
+                                <input id="phone-input" type="number"
+                                    placeholder="Enter your phone number"
+                                    name="phone"
+                                    value="<%= user.phone %>">
+                                <p id="phone-error"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edit-decision-div">
+                        <div class="save-edit">
+                            <button id="save-button" type="submit">Save</button>
+                        </div>
+                        <div class="cancel-edit">
+                            <button type="button"
+                                id="cancel-close-popup">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+
+            </section>
+            <!--
+                !edit details popup
+            -->
+        </main>
+        <%- include('assets/footer.ejs') %>
+
+        <script src="/js/user-account.js"></script>
+        <script src="/js/assets/navbar.js"></script>
+        <script src="/js/assets/typeLinks.js"></script>
+        <script src="/js/assets/authentication.js"></script>
+        <!-- icons script -->
+        <script src="https://kit.fontawesome.com/4aa734da70.js"
+            crossorigin="anonymous"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

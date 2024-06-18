@@ -1,0 +1,125 @@
+.show-section .heading{
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+    color: var(--dark-theme);
+    line-height: 40px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom:2px solid var(--lightest-border);
+}
+.show-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.show-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1700px;
+    
+}
+.show-list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    position: relative;
+}
+/* .show-list .j-card:last-child{
+    
+} */
+.j-card{
+    position: relative;
+    margin: 20px;
+    width: 300px;
+    height: max-content;
+    border-radius: 10px;
+    border: 2px solid var(--lightest-border);
+    display: flex;
+    /* padding: 10px; */
+    flex-direction: column;
+    box-shadow: 0px 0px 4px rgb(0, 0, 0,0);
+    transition: .3s ease;
+    cursor: pointer;
+}
+.j-card:hover {
+    /* box-shadow: 2px 2px 4px var(--card-hover); */
+    box-shadow: 0px 0px 7px var(--light-theme);
+    transform: scale(1.015);
+}
+.j-card-element{
+    padding: 5px;
+}
+.j-card-element-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.j-card-element-img .img1,
+.j-card-element-img .img2{
+    width: 295px;
+    height: 295px;
+    padding: 5px;
+    border-radius: 12px;
+    object-fit: cover;
+    z-index: 2;
+}
+.j-card-element-img .img2{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.j-card:hover .j-card-element-img .img1{
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+.j-card-element .name{
+    color: black;
+    font-size: 1.05rem;
+    font-weight: bolder;
+    max-height: 18px;
+    overflow: hidden;
+}
+.j-card-element .price{
+    color: var(--dark-theme);
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.delete-fav{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 4px rgb(0, 0, 0,0.3);
+    transform: scale(1);
+    transition: .2s ease-in-out;
+    z-index: 3;
+}
+.delete-fav i{
+    color: var(--dark-theme);
+    font-size: 1.3rem;
+    z-index: 3;
+}
+.delete-fav:hover{
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+    z-index: 3;
+
+}
+
+
+/* if no jewellery is there */
+

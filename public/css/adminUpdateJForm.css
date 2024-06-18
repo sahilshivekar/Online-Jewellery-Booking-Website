@@ -1,0 +1,121 @@
+.update-j-section {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #updateJForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: left;
+    position: relative;
+    /* padding: 20px; */
+    /* width: 70%; */
+  }
+  
+  input,
+  textarea,
+  select {
+    border: 2px solid var(--lightest-border);
+    border-radius: 5px;
+    outline: none;
+    width: 500px;
+    display: block;
+    height: 45px;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    cursor: text;
+    margin-top: 5px;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  select,
+  button,
+  .checkbox {
+    cursor: pointer;
+  }
+  
+  label {
+    width: 100%;
+    text-align: left;
+  }
+  
+  
+  .input-div {
+    padding: 6px 10px;
+  }
+  
+  .form-bottom {
+    position: absolute;
+    bottom: -150px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .type-checkboxes {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+  }
+  #types-div {
+    padding: 10px 10px;
+  }
+  .div-type {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    height: 30px;
+    /* background-color: red; */
+  }
+  
+  .type-checkboxes label {
+    width: max-content;
+  }
+  
+  .checkbox {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    /* line-height: 30px; */
+  }
+  .form-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+  }
+  
+  button {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border: 2px solid var(--dark-theme);
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  #reset {
+    background-color: white;
+    color: var(--dark-theme);
+  }
+  #reset:hover {
+    background-color: var(--white-theme-hover);
+  }
+  
+  #submit {
+    background-color: var(--dark-theme);
+    color: white;
+  }
+  #submit:hover {
+    background-color: var(--dark-theme-hover);
+  }
+  

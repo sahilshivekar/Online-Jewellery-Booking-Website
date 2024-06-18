@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OJB</title>
+
+        <!-- universal and headers css -->
+        <link rel="stylesheet" href="css/universal.css">
+        <link rel="stylesheet" href="css/adminSeeJForm.css">
+        <link rel="stylesheet" href="css/assets/adminHeaders.css">
+
+        <!-- for that canva poster font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+            rel="stylesheet">
+        <!-- "Cinzel Decorative", serif; -->
+    </head>
+    <body>
+        <header>
+            <div class="heading">
+                Admin Features
+            </div>
+            <section class="current-option">
+                | See Jewelleries
+            </section>
+        </header>
+        <main>
+
+            <section class="update-j-section">
+
+                <form method="put" action="adminUpdateJForm/updateJ"
+                    id="updateJForm">
+
+                    <div class="input-div">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"
+                            value="<%= j.name %>" required readonly>
+                        <input type="hidden" id="_id" name="_id"
+                            value="<%= j.id %>" required>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="description">Description:</label>
+                        <input id="description" name="description"
+                            value="<%= j.description %>" rows="2"
+                            required readonly>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="price">Price(rupees):</label>
+                        <input type="number" id="price" name="price"
+                            value="<%= j.price %>" required readonly>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="category">Category:</label>
+                        <input type="hidden" id="category-get"
+                            value="<%= j.category %>">
+                        <select id="category-selector" name="category" required
+                            readonly>
+                            <option value="rings">Rings</option>
+                            <option value="necklaces">Necklaces</option>
+                            <option value="chains">Chains</option>
+                            <option value="earrings">Earrings</option>
+                            <option value="pendants">Pendants</option>
+                            <option value="bracelets">Bracelets</option>
+                            <option value="nosepins">Nose Pins</option>
+                            <option value="bangles">Bangles</option>
+                            <option value="goldcoins">Gold coins</option>
+                            <option value="mangalsutras">Mangalsutras</option>
+                        </select>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="gross_weight">Gross Weight:</label>
+                        <input type="number" id="gross-weight"
+                            value="<%= j.gross_weight%>"
+                            name="gross_weight" required readonly>
+                    </div>
+
+                    <div class="input-div size-div">
+                        <label for="size">Size:</label>
+                        <input type="number" value="<%= j.size%>" id="size"
+                            name="size" readonly>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="picture1">Picture 1 Link:</label>
+                        <input type="text" value="<%= j.picture1%>"
+                            id="picture1" name="picture1"
+                            required readonly>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="picture2">Picture 2 Link:</label>
+                        <input type="text" value="<%= j.picture2%>"
+                            id="picture2" name="picture2"
+                            required readonly>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="gold_purity">Gold Purity(karats):</label>
+                        <input type="number" value="<%= j.gold_purity%>"
+                            id="goldPurity" name="gold_purity" readonly>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="diamond_weight">Diamond Weight:</label>
+                        <input type="number" value="<%= j.diamond_weight%>"
+                            id="diamondWeight"
+                            name="diamond_weight" readonly>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="qty">Quantity:</label>
+                        <input type="number" value="<%= j.qty%>" id="qty"
+                            name="qty" required readonly>
+                    </div>
+
+                    <div class="input-div">
+                        <label for="gender">Gender:</label>
+                        <input type="hidden" id="gender-get"
+                            value="<%= j.gender %>" readonly>
+                        <select id="gender" name="gender" required readonly>
+                            <option value="men" readonly>Men</option>
+                            <option value="women" readonly>Women</option>
+                            <option value="unisex" readonly>Unisex</option>
+                        </select>
+                    </div>
+
+                    <div class="form-bottom">
+
+                        <div id="types-div" class="input-div">
+                            <label>Type:</label>
+                            <input type="hidden" id="gold-get"
+                                value="<%= j.type.gold%>">
+                            <input type="hidden" id="diamond-get"
+                                value="<%= j.type.diamond%>">
+                            <input type="hidden" id="silver-get"
+                                value="<%= j.type.silver%>">
+                            <div class="type-checkboxes">
+                                <div class="div-type">
+                                    <input class="checkbox" type="checkbox"
+                                        id="gold" name="gold" readonly>
+                                    <label for="gold">Gold</label>
+                                </div>
+                                <div class="div-type">
+                                    <input class="checkbox" type="checkbox"
+                                        id="diamond" name="diamond" readonly>
+                                    <label for="diamond">Diamond</label>
+                                </div>
+                                <div class="div-type">
+                                    <input class="checkbox" type="checkbox"
+                                        id="silver" name="silver" readonly>
+                                    <label for="silver">Silver</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-buttons">
+                            <!-- <button id="reset" type="reset">Reset</button> -->
+                            <button id="submit" type="submit">Go back</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <script src="/js/adminSeeJForm.js"></script>
+
+        <!-- icons script -->
+        <script src="https://kit.fontawesome.com/4aa734da70.js"
+            crossorigin="anonymous"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

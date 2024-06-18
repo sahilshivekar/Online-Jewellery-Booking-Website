@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OJB</title>
+        <link rel="stylesheet" href="css/jDetails.css">
+
+        <link rel="stylesheet" href="css/universal.css">
+        <link rel="stylesheet" href="css/assets/footer.css">
+        <link rel="stylesheet" href="css/assets/navbar.css">
+        <link rel="stylesheet" href="css/assets/typeLinks.css">
+        <link rel="stylesheet" href="css/assets/authentication.css">
+
+        <!-- for that poster font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+        <!-- "Cinzel Decorative", serif; -->
+    </head>
+    <body>
+        <header>
+            <!-- navbar and typelink -->
+            <%- include('assets/navbar') %>
+            <%- include('assets/typeLinks') %>
+        </header>
+        <main>
+        
+
+            <div class="j-details-section">
+
+                <div class="j-details-container">
+                    <!-- left side images part -->
+                    <div class="img-container">
+                        <div class="small-images">
+                            <div class="small-image1">
+                                <img src="<%= jewellery.picture1 %>" alt>
+                            </div>
+                            <div class="small-image2">
+                                <img src="<%= jewellery.picture2 %>" alt>
+                            </div>
+                        </div>
+                        <div class="big-image">
+                            <img class="big1" src="<%= jewellery.picture1 %>"
+                                alt>
+                            <img class="big2" src="<%= jewellery.picture2 %>"
+                                alt>
+                        </div>
+                    </div>
+
+                    <!-- right side details part -->
+                    <div class="details-container">
+
+                        <!-- top-detail -->
+                        <div class="top-detail">
+                            <div class="detail-id detail-div"
+                                value="<%= jewellery._id%>" hidden="true"></div>
+                            <div class="detail-name detail-div">
+                                <%= jewellery.name%>
+                            </div>
+                            <div class="detail-desc detail-div">
+                                <%= jewellery.description%>
+
+                            </div>
+                            <div class="detail-price detail-div">
+                                <label>Price: </label>
+                                <p>&#8377;<span><%=jewellery.price%></span></p>
+                            </div>
+                        </div>
+
+                        <!-- middle-detail -->
+                        <div class="middle-detail">
+                            <div class="detail-category detail-div-below">
+                                <label>Category: </label>
+                                <p><%= jewellery.category%></p>
+                            </div>
+                            <div class="detail-purity detail-div-below">
+                                <div class="gold">
+                                    <label>Gold Purity: </label>
+                                    <p><%= jewellery.gold_purity%> Karat</p>
+                                </div>
+                                <% if(jewellery.diamond_weight){%>
+                                    <div class="diamond">
+                                        <label>Diamond Weight: </label>
+                                        <p><%= jewellery.diamond_weight%> c</p>
+                                    </div>
+                                <% } %>
+                            </div>
+                            <div class="detail-qty detail-div-below">
+                                <label>Quantity:</label>
+                                <div class="decrement qty-in-btn">
+                                    <button>-</button>
+                                </div>
+                                <% if(jewellery.qty>=0){%>
+                                <div class="number qty-in-text">
+                                    <%=jewellery.qty %></div>
+                                <%}%>
+                                <div class="increment qty-in-btn">
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <div class="detail-weight-size detail-div-below">
+                                <div class="gross-weight">
+                                    <label>Gross Weight: </label>
+                                    <p><%= jewellery.gross_weight%> g</p>
+                                </div>
+                                <% if(jewellery.size){%>
+                                    <div class="j-size">
+                                        <label>Size: </label>
+                                        <%if(jewellery.category == "bracelets"){%>
+                                            <p><%= jewellery.size%> CMS</p>
+                                        <%}%>
+                                        <%if(jewellery.category == "rings" || jewellery.category == "bangles"){%>
+                                            <p><%= jewellery.size%> MM</p>
+                                        <%}%>
+                                        <%if(jewellery.category == "mangalsutras" || jewellery.category == "chains"){%>
+                                            <p><%= jewellery.size%> INCHES</p>
+                                        <%}%>
+                                    </div>
+                                <% } %>
+                            </div>
+                            <div class="detail-gender detail-div-below">
+                                <label>Gender: </label>
+                                <p><%= jewellery.gender%></p>
+                            </div>
+                            
+                            <div class="detail-availabililty detail-div-below">
+                                <% if(jewellery.availability == true){ %>
+                                <!-- <p class="available"></p> -->
+                                <p class="available">Currently <%= jewellery.qty %> Available in
+                                    stocks</p>
+                                <% } else if(jewellery.availability == false){%>
+                                <p class="not-available">Currently Not Available
+                                    in stocks</p>
+                                <% } %>
+                            </div>
+
+                        </div>
+
+                        <!-- bottom-detail -->
+                        <div class="bottom-detail"></div>
+                        <div class="detail-book-fav detail-div-below">
+                            <% if(jewellery.availability == true) { %>
+                            <button class="book">
+                                Book Now
+                            </button>
+                            <% } else if(jewellery.availability == false){ %>
+                            <button class="book-disable">
+                                Book Now
+                            </button>
+                            <% } %>
+                            <button class="fav" name="inFav">
+                                Add to Favourites
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- availability
+
+
+            <!-- authentication -->
+        <%- include('assets/authentication') %>
+
+        <!-- popup for indicating booking is done -->
+
+        <section class="check-details-section">
+            <div class="check-details-container">
+
+                
+
+                <div class="dark-upper-container">
+                    Check Details
+                </div>
+                <div class="details-container-parent">
+                    <div class="details-container">
+                        <div class="image-of-jewellery">
+                            <img src="<%= jewellery.picture2 %>" alt="failed to load">
+                        </div>
+    
+                        <div class="details-info-only">
+                            <div class="booking-name check-details-div">
+                                <label>Jewellery Name: </label>
+                                <p><%= jewellery.name%></p>
+                            </div>
+                            <div class="booking-qty check-details-div">
+                                <label>Quantity: </label>
+                                <p></p>
+                            </div>
+                            <div class="booking-category check-details-div">
+                                <label>Category: </label>
+                                <p><%= jewellery.category %></p>
+                            </div>
+                            <div class="booking-price check-details-div">
+                                <label>Total Price: </label>
+                                <p><%= jewellery.price%></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-details-buttons">
+                        <!-- <div class="confirm-booking"> -->
+                            <button class="confirm-btn">Confirm</button>
+                        <!-- </div> -->
+                        <!-- <div class="cancel"> -->
+                            <button class="cancel-btn">Cancel</button>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="note-section">
+            <div class="note-container">
+                <div class="dark-upper-container">
+                    Booking is confirmed
+                </div>
+                <div class="details-container-parent">
+                    <div class="details-container">
+                        <label>Note: </label>
+                        <p>Thank you for booking with us! Please note that your booking will be canceled if another customer wants to puchase the jewellery. Kindly ensure to collect your jewellery from the store as soon as possible. Failure to do so may result in cancellation of your booking. We look forward to serving you!</p>
+                    </div>
+
+
+                    <div class="note-buttons">
+                        <button class="open-booking-list">Check Booking List</button>
+                        <button class="close-btn">Close</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="dark">
+            
+        </section>
+        </main>
+
+        <!-- footer -->
+        <%- include('assets/footer') %>
+
+        <!-- scripts -->
+        <script src="/js/jDetails.js"></script>
+
+        <script src="/js/assets/navbar.js"></script>
+        <script src="/js/assets/typeLinks.js"></script>
+        <script src="/js/assets/authentication.js"></script>
+
+        <!-- icons script -->
+        <script src="https://kit.fontawesome.com/4aa734da70.js"
+            crossorigin="anonymous"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

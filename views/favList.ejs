@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OJB</title>
+
+        <link rel="stylesheet" href="css/favList.css">
+
+        <link rel="stylesheet" href="css/universal.css">
+        <link rel="stylesheet" href="css/assets/footer.css">
+        <link rel="stylesheet" href="css/assets/navbar.css">
+        <link rel="stylesheet" href="css/assets/typeLinks.css">
+        <link rel="stylesheet" href="css/assets/authentication.css">
+    </head>
+    <body>
+        <header>
+            <%- include('assets/navbar') %>
+            <%- include('assets/typeLinks') %>
+        </header>
+        <main>
+            <%- include('assets/authentication') %>
+
+            <section class="show-section">
+                <div class="show-div">
+                    <!-- Heading********************** -->
+                    <div class="heading">
+                        <p>Your Favourites</p>
+                    </div>
+                    <div class="show-list">
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('assets/footer') %>
+
+        <script src="/js/favList.js"></script>
+
+        <script src="/js/assets/navbar.js"></script>
+        <script src="/js/assets/typeLinks.js"></script>
+        <script src="/js/assets/authentication.js"></script>
+
+        <!-- icons script -->
+        <script src="https://kit.fontawesome.com/4aa734da70.js"
+            crossorigin="anonymous"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

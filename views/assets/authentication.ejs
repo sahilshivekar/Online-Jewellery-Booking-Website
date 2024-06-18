@@ -1,0 +1,269 @@
+<!--
+        !chooose way popup starts
+      -->
+
+<section class="choose-way-section">
+  <div class="choose-way-container">
+
+    <div class="close-div">
+      <i class="fa-solid fa-circle-xmark"></i>
+    </div>
+
+    <div class="heading">
+      Choose a way
+    </div>
+
+    <div class="ways-div">
+      <div id="customer" class="way-div1 way-div">
+        <div class="icon-div">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <div class="icon-text">Customer</div>
+      </div>
+
+      <div id="admin" class="way-div">
+        <div class="icon-div">
+          <i class="fa-solid fa-shop"></i>
+        </div>
+        <div class="icon-text">Admin</div>
+      </div>
+      
+      <!-- <div id="inventory-manager" class="way-div">
+        <div class="icon-div">
+          <i class="fa-solid fa-list-check"></i>
+        </div>
+        <div class="icon-text">Inventory Manager</div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<!--
+        !choose way popup ends
+      -->
+
+<!--
+        !user login popup starts
+      -->
+<section class="login-popup-section">
+  <div class="login-popup-container">
+
+    <div class="close-div">
+      <i class="fa-solid fa-circle-xmark"></i>
+    </div>
+    <div class="poster">
+      <img src="/images/login-picture.png" alt="failed to load">
+    </div>
+    <form id="form-user-login" class="input-divs">
+      <div class="informing">
+        Customer
+      </div>
+
+      <div class="email-div input-div">
+        <label for="email-input-user-in">Email</label>
+        <input class="email-input" id="email-input-user-in" type="email"
+          placeholder="Enter your emailID" name="email">
+        <div id="email-error"></div>
+      </div>
+
+      <div class="password-div input-div">
+        <label for="password-input-user-in">Password</label>
+        <span>
+          <input class="pass-input" id="password-input-user-in" type="password"
+            placeholder="Enter your password" name="password">
+          <button type="button" class="togglePassword"><i
+              class="fa-sharp fa-solid fa-eye-slash"></i></button>
+        </span>
+
+        <div id="password-error"></div>
+      </div>
+
+      <input type="hidden" name="userType" value="userLogin">
+
+      <div class="button-div input-div">
+        <button type="submit" class="login">Login</button>
+      </div>
+
+      <div class="user-signup-call">
+        <a>
+          Don't have any account? Signup here!
+        </a>
+      </div>
+    </form>
+  </div>
+
+</section>
+
+<!--
+        !user login popup ends
+      -->
+
+<!--
+        !user signup popup starts
+      -->
+<section class="user-signup-section">
+
+  <div class="user-signup-container">
+
+    <div class="popup-close-div">
+      <i class="fa-solid fa-circle-xmark"></i>
+    </div>
+    <div class="poster">
+      <img src="/images/signup-picture.png" alt="failed to load">
+    </div>
+    <form id="form-user-signup" class="input-divs" method="post"
+      action="/">
+      <div class="informing">
+        Customer
+      </div>
+
+      <div class="email-div input-div">
+        <label for="email-input-user-up">Email</label>
+        <input class="email-input" id="email-input-user-up" type="email"
+          placeholder="Enter your emailID" name="email">
+        <div id="email-error"></div>
+      </div>
+
+      <div class="password-div input-div">
+        <label for="password-input-user-up">Password</label>
+        <span>
+          <input class="pass-input" id="password-input-user-up" type="password"
+            placeholder="Enter your password" name="password">
+          <button type="button" class="togglePassword"><i
+              class="fa-sharp fa-solid fa-eye-slash"></i></button>
+        </span>
+        <div id="password-error"></div>
+
+      </div>
+
+      <input type="hidden" name="userType" value="userSignup">
+
+      <div class="button-div input-div">
+        <button class="signup" type="submit">Sign up</button>
+      </div>
+
+      <div class="user-login-call">
+        <a>
+          Already have an account? Login here!
+        </a>
+      </div>
+    </form>
+  </div>
+
+</section>
+<!--
+        !user signup popup ends
+      -->
+
+<!--
+        !shopkeeper starts
+      -->
+<section class="admin-section">
+
+  <form id="admin-signin-form" method="post" action="/" class="admin-container">
+
+    <div class="popup-close-div">
+      <i class="fa-solid fa-circle-xmark"></i>
+    </div>
+    <div class="poster">
+      <img src="/images/shopkeeper-signin-picture.png"
+        alt="failed to load">
+    </div>
+    <div class="input-divs">
+
+      <div class="informing">
+        Admin
+      </div>
+
+      <div class="id-div input-div">
+        <label for="id-label-admin">Username</label>
+        <input class="id-input-admin" type="text"
+          placeholder="Enter username" name="username">
+        <div id="username-error-admin"></div>
+      </div>
+
+      <div class="password-div input-div">
+        <label for="password-label-admin">Password</label>
+        <span>
+          <input class="pass-input-admin" type="password"
+            placeholder="Enter Password" name="password">
+          <button type="button" class="togglePassword"><i
+              class="fa-sharp fa-solid fa-eye-slash"></i></button>
+        </span>
+        <div id="password-error-admin"></div>
+      </div>
+
+      
+
+      <div class="button-div input-div">
+        <button class="admin-signin-btn" type="submit">Sign in</button>
+      </div>
+
+    </div>
+  </form>
+
+</section>
+
+<!-- popup showing already signed in as a admin -->
+<section class="already-in-section">
+  <div class="already-in-container">
+    <div class="message">
+      You have already signed in as a admin. Redirecting you to the admin dashboard
+    </div>
+  </div>
+</section>
+<!--
+        !shopkeeper ends
+      -->
+
+<!--
+        !inventory manager starts
+      -->
+<!-- <section class="imgr-section">
+
+  <div class="imgr-container">
+
+    <div class="popup-close-div">
+      <i class="fa-solid fa-circle-xmark"></i>
+    </div>
+    <div class="poster">
+      <img src="/images/shopkeeper-signin-picture.png"
+        alt="failed to load">
+    </div>
+    <form class="input-divs">
+
+      <div class="informing">
+        Inventory Manager
+      </div>
+
+      <div class="email-div input-div">
+        <label for="email-input-imgr">Email</label>
+        <input class="email-input" id="email-input-imgr" type="email"
+          placeholder="Enter your emailID" name="email">
+        <div id="email-error"></div>
+      </div>
+
+      <div class="password-div input-div">
+        <label for="password-input-imgr">Password</label>
+        <span>
+          <input class="pass-input" id="password-input-imgr" type="password"
+            placeholder="Enter your password" name="password">
+          <button type="button" class="togglePassword"><i
+              class="fa-sharp fa-solid fa-eye-slash"></i></button>
+        </span>
+        <div id="password-error"></div>
+      </div>
+
+      <input type="hidden" name="userType" value="inventory-manager">
+
+      <div class="button-div input-div">
+        <button class="signup" type="submit">Sign in</button>
+      </div>
+
+    </form>
+  </div>
+
+</section> -->
+<!--
+        !inventory manager ends
+      -->
