@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cookieParser = require('cookie-parser');
-const { requireAuth, checkUserEJS, adminOnly } = require('../middleware/authMiddleware.js');
+const { requireAuth, checkUserEJS, adminOnly } = require('./middleware/authMiddleware.js');
 // const { checkJ } = require('../middleware/jDetailsMiddleware.js');
 // const expressLayouts = require('express-ejs-layouts')        
 //env**********************************************************
@@ -9,7 +9,7 @@ require('dotenv').config();
 const port = 5555;
 
 //Db***********************************************************
-const connectDb = require('./mongo.js')
+const connectDb = require('./src/mongo.js')
 connectDb();
 
 //path*********************************************************
@@ -32,66 +32,66 @@ app.post('*', checkUserEJS);
 app.put('*', checkUserEJS);
 app.delete('*', checkUserEJS);
 
-const homeRoute = require('../routes/homeRoute.js');
+const homeRoute = require('./routes/homeRoute.js');
 app.use('/', homeRoute);
 
-const authenticationRoute = require('../routes/authenticationRoute.js');
+const authenticationRoute = require('./routes/authenticationRoute.js');
 app.use('/authentication', authenticationRoute);
 
-const userAccountRoute = require('../routes/userAccountRoute.js');
+const userAccountRoute = require('./routes/userAccountRoute.js');
 app.use('/userAccount', requireAuth, userAccountRoute);
 
 // const forgotRoute = require('../routes/forgotRoute.js');
 // app.use('/forgot',forgotRoute);
 
-const jListRoute = require('../routes/jListRoute.js');
+const jListRoute = require('./routes/jListRoute.js');
 app.use('/jList', jListRoute);
 
-const favListRoute = require('../routes/favListRoute.js');
+const favListRoute = require('./routes/favListRoute.js');
 app.use('/favList', requireAuth, favListRoute);
 
-const jDetailsRoute = require('../routes/jDetailsRoute.js');
+const jDetailsRoute = require('./routes/jDetailsRoute.js');
 app.use('/jDetails', jDetailsRoute);
 
-const bookListRoute = require('../routes/bookListRoute.js');
+const bookListRoute = require('./routes/bookListRoute.js');
 app.use('/bookList', requireAuth, bookListRoute);
 
 
 //admin************************************************
-const adminDashRoute = require('../routes/adminDashRoute.js');
+const adminDashRoute = require('./routes/adminDashRoute.js');
 app.use('/admin', adminOnly, adminDashRoute);
 
-const adminAddJR = require('../routes/adminAddJR.js');
+const adminAddJR = require('./routes/adminAddJR.js');
 app.use('/adminAddJ', adminOnly, adminAddJR);
 
-const adminRemJR = require('../routes/adminRemJR.js');
+const adminRemJR = require('./routes/adminRemJR.js');
 app.use('/adminRemJ', adminOnly, adminRemJR);
 
-const adminRemJFormR = require('../routes/adminRemJFormR.js');
+const adminRemJFormR = require('./routes/adminRemJFormR.js');
 app.use('/adminRemJForm', adminOnly, adminRemJFormR);  
 
-const adminUpdateJR = require('../routes/adminUpdateJR.js');
+const adminUpdateJR = require('./routes/adminUpdateJR.js');
 app.use('/adminUpdateJ', adminOnly, adminUpdateJR);
 
-const adminUpdateJFormR = require('../routes/adminUpdateJFormR.js');
+const adminUpdateJFormR = require('./routes/adminUpdateJFormR.js');
 app.use('/adminUpdateJForm', adminOnly, adminUpdateJFormR);
 
-const adminReadJR = require('../routes/adminReadJR.js');
+const adminReadJR = require('./routes/adminReadJR.js');
 app.use('/adminReadJ', adminOnly, adminReadJR);
 
-const adminSeeJFormR = require('../routes/adminSeeJFormR.js');
+const adminSeeJFormR = require('./routes/adminSeeJFormR.js');
 app.use('/adminSeeJForm', adminOnly, adminSeeJFormR);  
 
-const adminManageBookingsR = require('../routes/adminManageBookingsR.js');
+const adminManageBookingsR = require('./routes/adminManageBookingsR.js');
 app.use('/adminManageBookings', adminOnly, adminManageBookingsR);
 
-const adminMostFavR = require('../routes/adminMostFavR.js');
+const adminMostFavR = require('./routes/adminMostFavR.js');
 app.use('/adminMostFav', adminOnly, adminMostFavR);
 
-const adminTopSellersR = require('../routes/adminTopSellersR.js');
+const adminTopSellersR = require('./routes/adminTopSellersR.js');
 app.use('/adminTopSellers', adminOnly, adminTopSellersR);
 
-const adminUsersDetailsR = require('../routes/adminUsersDetailsR.js');
+const adminUsersDetailsR = require('./routes/adminUsersDetailsR.js');
 app.use('/adminUsersDetails', adminOnly, adminUsersDetailsR);
 
 
