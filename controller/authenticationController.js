@@ -1,6 +1,6 @@
 const users = require('../models/userModel');
 const admins = require('../models/adminModel');
-
+require('dotenv').config();
 //Creating jwt token with id*************************************************************************************************************
 const jwt = require('jsonwebtoken');
 const oneDay = 1 * 24 * 60 * 60;

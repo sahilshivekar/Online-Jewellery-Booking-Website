@@ -14,9 +14,10 @@ connectDb();
 
 //path*********************************************************
 const path = require('path');
-const publicPath = path.join(__dirname, '../public');
-app.use(express.static(publicPath));
-console.log(publicPath)
+// const publicPath = path.join(__dirname, '../public');
+// app.use(express.static(publicPath));
+app.use(express.static('public'));
+// console.log(publicPath)
 
 app.set('view engine', 'ejs');
 

@@ -1,0 +1,1368 @@
+[{
+  "_id": {
+    "$oid": "6602affcefca4f728bf7910f"
+  },
+  "name": "Bold Square Diamond Ring",
+  "description": "Dainty diamonds are arranged in a square pattern to give you this bold, ridged ring crafted in 18 karat rose gold. Stone Clarity: I1/I2",
+  "price": 64300,
+  "category": "rings",
+  "gross_weight": 4.919,
+  "picture1": "\\images\\rings\\ring2a.png",
+  "picture2": "\\images\\rings\\ring2b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": false,
+  "gold_purity": 18,
+  "diamond_weight": 0.046,
+  "size": 19.5,
+  "qty": 0,
+  "gender": "men",
+  "updatedAt": {
+    "$date": "2024-04-13T07:43:48.726Z"
+  },
+  "sold": 5
+},
+{
+  "_id": {
+    "$oid": "6602d737b669ec7a578ce005"
+  },
+  "name": "Classic Crossover Diamond Ring",
+  "description": "Perfect match for the woman with classic beauty, this ring is crafted in 18 karat rose gold, studded with diamonds. Stone Clarity: SI2",
+  "price": 62618,
+  "category": "rings",
+  "gross_weight": 2.298,
+  "picture1": "\\images\\rings\\ring3a.png",
+  "picture2": "\\images\\rings\\ring3b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false,
+    "_id": {
+      "$oid": "6624e62936445a0a2341ecaa"
+    }
+  },
+  "availability": false,
+  "gold_purity": 18,
+  "diamond_weight": 0.227,
+  "size": 16.4,
+  "qty": 0,
+  "gender": "women",
+  "updatedAt": {
+    "$date": "2024-04-21T10:10:49.327Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6602d9f4b669ec7a578ce007"
+  },
+  "name": "Elegant Layers Diamond Ring",
+  "description": "Alternate layers of radiant gold and shimmering diamonds make this classy ring, crafted in 18 karat yellow gold. Stone Clarity: SI2",
+  "price": 56426,
+  "category": "rings",
+  "gross_weight": 4.162,
+  "picture1": "\\images\\rings\\ring5a.png",
+  "picture2": "\\images\\rings\\ring5b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": false,
+  "gold_purity": 18,
+  "diamond_weight": 0.17,
+  "size": 16.4,
+  "qty": 0,
+  "gender": "women",
+  "updatedAt": {
+    "$date": "2024-04-08T15:52:56.714Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6602da30b669ec7a578ce008"
+  },
+  "name": "Little Flower Diamond Ring",
+  "description": "A pretty diamond flower sits on a gold band in this ring crafted in 18 karat yellow gold, studded with diamonds. Stone Clarity: SI2",
+  "price": 51635,
+  "category": "rings",
+  "gross_weight": 1.73,
+  "picture1": "\\images\\rings\\ring4a.png",
+  "picture2": "\\images\\rings\\ring4b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": false,
+  "gold_purity": 18,
+  "diamond_weight": 0.211,
+  "size": 16.4,
+  "qty": 0,
+  "gender": "women",
+  "updatedAt": {
+    "$date": "2024-04-08T18:19:58.888Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6602dae4b669ec7a578ce00a"
+  },
+  "name": "Fancy Glossy Gold and Diamond Finger Ring",
+  "description": "Timeless and supreme, this 18 Karat Yellow Gold diamond finger ring comes with a fine glossy finish. Stone Clarity SI2",
+  "price": 38376,
+  "category": "rings",
+  "gross_weight": 2.439,
+  "picture1": "\\images\\rings\\ring6a.png",
+  "picture2": "\\images\\rings\\ring6b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gold_purity": 18,
+  "diamond_weight": 0.135,
+  "size": 17.2,
+  "qty": 2,
+  "gender": "women",
+  "updatedAt": {
+    "$date": "2024-04-22T07:35:04.483Z"
+  },
+  "sold": 4
+},
+{
+  "_id": {
+    "$oid": "6602db6fb669ec7a578ce00b"
+  },
+  "name": "Chic Dual Tone Diamond Ring",
+  "description": "Bask in the elegant opulence of this dual toned ring, crafted in 18 karat white and rose gold, studded with diamonds. Stone Clarity: SI2",
+  "price": 51363,
+  "category": "rings",
+  "gross_weight": 1.938,
+  "picture1": "\\images\\rings\\ring7a.png",
+  "picture2": "\\images\\rings\\ring7b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gold_purity": 18,
+  "diamond_weight": 0.22,
+  "size": 16.4,
+  "qty": 5,
+  "gender": "women",
+  "updatedAt": {
+    "$date": "2024-04-21T20:01:09.800Z"
+  },
+  "sold": 3
+},
+{
+  "_id": {
+    "$oid": "6602df52b669ec7a578ce010"
+  },
+  "name": "Dainty Elegance Diamond Ring",
+  "description": "Never go unnoticed when you adorn this dainty ring, crafted in 18 karat yellow gold, studded with diamonds. Stone Clarity: SI2",
+  "price": 49745,
+  "category": "rings",
+  "gross_weight": 1.962,
+  "picture1": "\\images\\rings\\ring10a.png",
+  "picture2": "\\images\\rings\\ring10b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gold_purity": 18,
+  "diamond_weight": 0.181,
+  "size": 16.4,
+  "qty": 11,
+  "gender": "women",
+  "updatedAt": {
+    "$date": "2024-04-09T18:15:58.312Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6602dfb9b669ec7a578ce011"
+  },
+  "name": "Floral Gold Finger Ring with Jali Work",
+  "description": "Fascinate everyone around you with this Floral Finger Ring with Jali Work and Beaded Design crafted in 22 Karat High Polish Yellow Gold.",
+  "price": 46839,
+  "category": "rings",
+  "gross_weight": 5.586,
+  "picture1": "\\images\\rings\\ring11a.png",
+  "picture2": "\\images\\rings\\ring11b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gold_purity": 22,
+  "size": 16.4,
+  "qty": 9,
+  "gender": "women",
+  "updatedAt": {
+    "$date": "2024-04-10T15:38:28.935Z"
+  },
+  "sold": 1
+},
+{
+  "_id": {
+    "$oid": "6602e057b669ec7a578ce012"
+  },
+  "name": "Intertwining Leaves Rose Gold and Diamond Finger Ring",
+  "description": "Accentuate your majestic beauty with this 18 Karat Rose Gold finger ring with diamonds in a leaf pattern for extra dazzle. Stone Clarity I1I2",
+  "price": 29782,
+  "category": "rings",
+  "gross_weight": 1.405,
+  "picture1": "\\images\\rings\\ring12a.png",
+  "picture2": "\\images\\rings\\ring12b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": false,
+  "gold_purity": 18,
+  "diamond_weight": 0.143,
+  "size": 16.4,
+  "qty": 0,
+  "gender": "women",
+  "updatedAt": {
+    "$date": "2024-04-24T04:07:06.885Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6602e0d3b669ec7a578ce013"
+  },
+  "name": "Classy Leafy Diamond Ring",
+  "description": "Class up your work styles with this leafy ring, crafted in 18 karat rose gold, studded with diamonds. Stone Clarity: SI2",
+  "price": 31355,
+  "category": "rings",
+  "gross_weight": 1.944,
+  "picture1": "\\images\\rings\\ring13a.png",
+  "picture2": "\\images\\rings\\ring13b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gold_purity": 18,
+  "diamond_weight": 0.103,
+  "size": 16.4,
+  "qty": 4,
+  "gender": "women",
+  "updatedAt": {
+    "$date": "2024-04-11T18:16:48.726Z"
+  },
+  "sold": 30
+},
+{
+  "_id": {
+    "$oid": "6602e122b669ec7a578ce014"
+  },
+  "name": "Gleaming Flower Diamond Ring",
+  "description": "Revel in the floral beauty of this gleaming ring crafted in 18 karat rose gold, studded with diamonds. Stone Clarity: SI2",
+  "price": 29638,
+  "category": "rings",
+  "gross_weight": 2.666,
+  "picture1": "\\images\\rings\\ring14a.png",
+  "picture2": "\\images\\rings\\ring14b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gold_purity": 18,
+  "diamond_weight": 0.075,
+  "size": 16.4,
+  "qty": 91,
+  "gender": "women",
+  "updatedAt": {
+    "$date": "2024-04-17T13:55:57.674Z"
+  },
+  "sold": 5
+},
+{
+  "_id": {
+    "$oid": "661418dd87c94e27fbf5064c"
+  },
+  "name": "Bliss of Innocence Ring",
+  "description": "For the little girl who loved to borrow and wear her mom's jewellery as a kid, this lovely ring is gilded in the same classic design!",
+  "price": 42657,
+  "category": "rings",
+  "gross_weight": 2.392,
+  "picture1": "\\images\\rings\\ring1a.png",
+  "picture2": "\\images\\rings\\ring1b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gold_purity": 18,
+  "diamond_weight": 0.152,
+  "size": 16.4,
+  "qty": 1,
+  "gender": "women",
+  "updatedAt": {
+    "$date": "2024-04-10T14:53:23.745Z"
+  },
+  "sold": 4
+},
+{
+  "_id": {
+    "$oid": "6614eb2072c7a7b25d93a804"
+  },
+  "name": "Iconic Linked Bracelet",
+  "description": "Luminous gold in an interlinked pattern makes this iconic figaro link bracelet, crafted in 18 karat yellow, white and rose gold",
+  "price": 40299,
+  "category": "bracelets",
+  "gross_weight": 2.337,
+  "size": 18,
+  "picture1": "\\images\\bracelets\\bracelet1a.png",
+  "picture2": "\\images\\bracelets\\bracelet1b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "qty": 3
+},
+{
+  "_id": {
+    "$oid": "6614f0c672c7a7b25d93a806"
+  },
+  "name": "Spiral Flower Diamond Bracelet",
+  "description": "A shimmering spiral of flower makes this bracelet, crafted in 18 karat rose gold, studded with diamonds. Stone Clarity: SI2",
+  "price": 71220,
+  "category": "bracelets",
+  "gross_weight": 2.387,
+  "size": 18,
+  "picture1": "\\images\\bracelets\\bracelet2a.png",
+  "picture2": "\\images\\bracelets\\bracelet2b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "qty": 3,
+  "diamond_weight": 0.321,
+  "updatedAt": {
+    "$date": "2024-04-11T18:16:48.749Z"
+  },
+  "sold": 3
+},
+{
+  "_id": {
+    "$oid": "6614f20d72c7a7b25d93a807"
+  },
+  "name": "Fashionable Diamond Bangle",
+  "description": "Accentuate your Modern Wear with this Delicate Diamond Bangle Crafted in 18 Karat Yellow and White Gold which elevate your style. Stone clarity SI2",
+  "price": 91966,
+  "category": "bangles",
+  "gross_weight": 7.273,
+  "size": 55,
+  "picture1": "\\images\\bangles\\bangle1a.png",
+  "picture2": "\\images\\bangles\\bangle1b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "diamond_weight": 0.246,
+  "qty": 4,
+  "updatedAt": {
+    "$date": "2024-05-07T22:43:26.036Z"
+  },
+  "sold": 1
+},
+{
+  "_id": {
+    "$oid": "6614f2e472c7a7b25d93a808"
+  },
+  "name": "Delicate Diamond Bangle",
+  "description": "This bangle's design exudes grace and allure, with a seamless band of 18 Karat yellow gold that gracefully encircles the wrist. Stone Clarity: SI2",
+  "price": 102501,
+  "category": "bangles",
+  "gross_weight": 9.669,
+  "size": 47,
+  "picture1": "\\images\\bangles\\bangle2a.png",
+  "picture2": "\\images\\bangles\\bangle2b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": false,
+  "gender": "women",
+  "gold_purity": 18,
+  "diamond_weight": 0.22,
+  "qty": 0,
+  "updatedAt": {
+    "$date": "2024-04-22T08:09:58.571Z"
+  },
+  "sold": 3
+},
+{
+  "_id": {
+    "$oid": "6614f37472c7a7b25d93a809"
+  },
+  "name": "Radiant Tiered Necklace",
+  "description": "Radiate timeless charm with this multi-tier, beaded necklace, crafted in 22 karat yellow gold",
+  "price": 158506,
+  "category": "necklaces",
+  "gross_weight": 18.126,
+  "picture1": "\\images\\necklaces\\necklace1a.png",
+  "picture2": "\\images\\necklaces\\necklace1b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 1,
+  "updatedAt": {
+    "$date": "2024-04-21T19:57:42.484Z"
+  },
+  "sold": 7
+},
+{
+  "_id": {
+    "$oid": "6614f44572c7a7b25d93a80a"
+  },
+  "name": "Timeless Necklace Set",
+  "description": "Add an opulent touch to your ensembles with this necklace set, crafted in 22 karat yellow gold, with red stones",
+  "price": 254165,
+  "category": "necklaces",
+  "gross_weight": 28.635,
+  "picture1": "\\images\\necklaces\\necklace2a.png",
+  "picture2": "\\images\\necklaces\\necklace2b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 4,
+  "updatedAt": {
+    "$date": "2024-04-22T07:47:41.266Z"
+  },
+  "sold": 1
+},
+{
+  "_id": {
+    "$oid": "6618206fbd40cc677e5d36de"
+  },
+  "name": "Sparkling Flowers Diamond Bracelet",
+  "description": "Make a lasting impression with this charming bracelet, crafted in 18 karat rose gold, studded with diamonds. Stone Clarity: SI2",
+  "price": 128924,
+  "category": "bracelets",
+  "gross_weight": 4.559,
+  "size": 18,
+  "picture1": "\\images\\bracelets\\bracelet3a.png",
+  "picture2": "\\images\\bracelets\\bracelet3b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "diamond_weight": 0.575,
+  "qty": 3
+},
+{
+  "_id": {
+    "$oid": "66182235bd40cc677e5d36df"
+  },
+  "name": "Intricate Leafy Bracelet",
+  "description": "Stand out of the crowd easily when you adorn the intricate leaf patterns of this bracelet, crafted in 22 karat yellow gold",
+  "price": 98910,
+  "category": "bracelets",
+  "gross_weight": 11.045,
+  "size": 18,
+  "picture1": "\\images\\bracelets\\bracelet4a.png",
+  "picture2": "\\images\\bracelets\\bracelet4b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "qty": 5
+},
+{
+  "_id": {
+    "$oid": "661822a1bd40cc677e5d36e0"
+  },
+  "name": "Graceful Stamp Bracelet",
+  "description": "Beautifully detailed, with a textured pattern, this heart style bracelet is crafted in 22 karat yellow gold, with rhodium finish",
+  "price": 83182,
+  "category": "bracelets",
+  "gross_weight": 9.339,
+  "size": 18,
+  "picture1": "\\images\\bracelets\\bracelet5a.png",
+  "picture2": "\\images\\bracelets\\bracelet5b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 5,
+  "updatedAt": {
+    "$date": "2024-04-21T20:03:26.968Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6618237dbd40cc677e5d36e1"
+  },
+  "name": "Sleek Gold Bangle",
+  "description": "Choose simplicity and elegance with this minimally designed sleek gold bangle, meticulously crafted in 22 karat yellow gold.",
+  "price": 85673,
+  "category": "bangles",
+  "gross_weight": 10.268,
+  "size": 60,
+  "picture1": "\\images\\bangles\\bangle3a.png",
+  "picture2": "\\images\\bangles\\bangle3b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 3,
+  "updatedAt": {
+    "$date": "2024-04-21T20:01:39.268Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "661823e4bd40cc677e5d36e2"
+  },
+  "name": "Classy Petite Bangle",
+  "description": "Channel an unmatched beauty with this classy bangle crafted in 22 karat yellow gold.",
+  "price": 74498,
+  "category": "bangles",
+  "gross_weight": 8.602,
+  "size": 42,
+  "picture1": "\\images\\bangles\\bangle4a.png",
+  "picture2": "\\images\\bangles\\bangle4b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 5
+},
+{
+  "_id": {
+    "$oid": "66182473bd40cc677e5d36e3"
+  },
+  "name": "Fashionable Mesh Bangle",
+  "description": "This bangle features a mesh pattern embedded with pastel enamel, crafted in 22 karat yellow gold",
+  "price": 171527,
+  "category": "bangles",
+  "gross_weight": 19.032,
+  "size": 60,
+  "picture1": "\\images\\bangles\\bangle5a.png",
+  "picture2": "\\images\\bangles\\bangle5b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 5
+},
+{
+  "_id": {
+    "$oid": "66182763bd40cc677e5d36e4"
+  },
+  "name": "Timeless Mesh Necklace Set",
+  "description": "Timeless and iconic, don this stunning necklace set, crafted in 22 karat yellow gold, to make a grand entrance",
+  "price": 148655,
+  "category": "necklaces",
+  "gross_weight": 15.697,
+  "picture1": "\\images\\necklaces\\necklace3a.png",
+  "picture2": "\\images\\necklaces\\necklace3b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false,
+    "_id": {
+      "$oid": "66240369c2081ad7541e08b8"
+    }
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 5,
+  "updatedAt": {
+    "$date": "2024-04-20T18:03:21.681Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "661827d5bd40cc677e5d36e5"
+  },
+  "name": "Wondrous Gold Necklace Set",
+  "description": "Antique Punjabi Choker and Earrings Set with Coloured Stones Crafted in 22 Karat Yellow Gold",
+  "price": 539729,
+  "category": "necklaces",
+  "gross_weight": 57.329,
+  "picture1": "\\images\\necklaces\\necklace4a.png",
+  "picture2": "\\images\\necklaces\\necklace4b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": false,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 0,
+  "updatedAt": {
+    "$date": "2024-04-17T13:57:11.440Z"
+  },
+  "sold": 5
+},
+{
+  "_id": {
+    "$oid": "66182822bd40cc677e5d36e6"
+  },
+  "name": "Enchanting Traditional Necklace",
+  "description": "Brighten up your ethnic ensembles with the traditional beauty of this floral necklace crafted in 22 karat yellow gold, with red gemstones",
+  "price": 263020,
+  "category": "necklaces",
+  "gross_weight": 28.689,
+  "picture1": "\\images\\necklaces\\necklace5a.png",
+  "picture2": "\\images\\necklaces\\necklace5b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 5,
+  "updatedAt": {
+    "$date": "2024-04-21T19:56:55.112Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66182a18bd40cc677e5d36e7"
+  },
+  "name": "Traditional Chandbali Earrings",
+  "description": "Revel in the beauty of these lovely chandbali style drop earrings crafted in 22 karat yellow gold",
+  "price": 131890,
+  "category": "earrings",
+  "gross_weight": 15.697,
+  "picture1": "\\images\\earrings\\earring1a.png",
+  "picture2": "\\images\\earrings\\earring1b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 3,
+  "updatedAt": {
+    "$date": "2024-05-07T22:46:12.562Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66182aacbd40cc677e5d36e8"
+  },
+  "name": "Enticing Sui Dhaga 3 Layer Gold Drop Earrings",
+  "description": "Instantly illuminate your occasion ensembles with these intricate drop earrings crafted in 22 Karat Yellow Gold in a high polish finish.",
+  "price": 56786,
+  "category": "earrings",
+  "gross_weight": 6.452,
+  "picture1": "\\images\\earrings\\earring2a.png",
+  "picture2": "\\images\\earrings\\earring2b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 3,
+  "updatedAt": {
+    "$date": "2024-04-23T08:10:56.661Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66182af2bd40cc677e5d36e9"
+  },
+  "name": "Charming 22 Karat Yellow Gold Long Beaded Tasselled Drop Earrings",
+  "description": "Traditional 22 Karat yellow gold earrings featuring a vertical trail of 5 bell motifs, accented with a tassel bottom, hooked to an edgy round base",
+  "price": 59796,
+  "category": "earrings",
+  "gross_weight": 6.794,
+  "picture1": "\\images\\earrings\\earring3a.png",
+  "picture2": "\\images\\earrings\\earring3b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 2,
+  "updatedAt": {
+    "$date": "2024-04-12T14:30:42.754Z"
+  },
+  "sold": 1
+},
+{
+  "_id": {
+    "$oid": "66182b32bd40cc677e5d36ea"
+  },
+  "name": "Traditional Floral Earrings",
+  "description": "Capture the charm of flowers with these traditional earrings, crafted in 22 karat yellow gold",
+  "price": 89234,
+  "category": "earrings",
+  "gross_weight": 9.901,
+  "picture1": "\\images\\earrings\\earring4a.png",
+  "picture2": "\\images\\earrings\\earring4b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 3,
+  "updatedAt": {
+    "$date": "2024-04-22T07:37:24.378Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66182b7ebd40cc677e5d36eb"
+  },
+  "name": "Opulent Rawa Work Gold Earrings",
+  "description": "Celebrate the opulence of tradition with this stunning pair of gold earring crafted in 22 Karat Yellow Gold with rawa work.",
+  "price": 135757,
+  "category": "earrings",
+  "gross_weight": 15.063,
+  "picture1": "\\images\\earrings\\earring5a.png",
+  "picture2": "\\images\\earrings\\earring5b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": false,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 0,
+  "updatedAt": {
+    "$date": "2024-04-14T13:41:39.269Z"
+  },
+  "sold": 3
+},
+{
+  "_id": {
+    "$oid": "66182d16bd40cc677e5d36ec"
+  },
+  "name": "A Letter Glossy Gold Pendant",
+  "description": "Speak the language of elegance with this calligraphic pendant featuring the letter A is crafted in 18 Karat Yellow Gold..",
+  "price": 9584,
+  "category": "pendants",
+  "gross_weight": 1.308,
+  "picture1": "\\images\\pendents\\pendent1a.png",
+  "picture2": "\\images\\pendents\\pendent1b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "unisex",
+  "gold_purity": 18,
+  "qty": 3
+},
+{
+  "_id": {
+    "$oid": "66182dafbd40cc677e5d36ee"
+  },
+  "name": "Intricate Grid Pendant",
+  "description": "Immaculate grid pattern hold intricate rawa work in this pendant, crafted in 22 karat yellow gold",
+  "price": 34978,
+  "category": "pendants",
+  "gross_weight": 3.881,
+  "picture1": "\\images\\pendents\\pendent2a.png",
+  "picture2": "\\images\\pendents\\pendent2b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 3
+},
+{
+  "_id": {
+    "$oid": "66182df4bd40cc677e5d36ef"
+  },
+  "name": "Luminous Swirls Diamond Pendant",
+  "description": "Interrupted swirls of luminous gold are encrusted with tiny diamonds in this artistic pendant, crafted in 18 karat rose gold. Stone Clarity: SI2",
+  "price": 46972,
+  "category": "pendants",
+  "gross_weight": 1.374,
+  "picture1": "\\images\\pendents\\pendent3a.png",
+  "picture2": "\\images\\pendents\\pendent3b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "diamond_weight": 0.214,
+  "qty": 3
+},
+{
+  "_id": {
+    "$oid": "66182e5fbd40cc677e5d36f0"
+  },
+  "name": "Stylised Typographic Letter B Gold Pendant",
+  "description": "Elegant lettering and subtle texture work makes this letter B pendant set in 18 Karat Yellow Gold a timeless wonder.",
+  "price": 10399,
+  "category": "pendants",
+  "gross_weight": 1.427,
+  "picture1": "\\images\\pendents\\pendent4a.png",
+  "picture2": "\\images\\pendents\\pendent4b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "unisex",
+  "gold_purity": 18,
+  "qty": 3
+},
+{
+  "_id": {
+    "$oid": "66182f2abd40cc677e5d36f1"
+  },
+  "name": "Regal Enchantment Solitaire Pendant",
+  "description": "Sublime and ritzy, this timeless solitaire pendant in 18 karat yellow gold makes a stunning statement of elegance. Stone Clarity: SI1",
+  "price": 61965,
+  "category": "pendants",
+  "gross_weight": 0.571,
+  "picture1": "\\images\\pendents\\pendent5a.png",
+  "picture2": "\\images\\pendents\\pendent5b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "unisex",
+  "gold_purity": 18,
+  "diamond_weight": 0.31,
+  "qty": 3
+},
+{
+  "_id": {
+    "$oid": "6618334cbd40cc677e5d36f5"
+  },
+  "name": "Graceful Geometric Gold Chain",
+  "description": "Classy meets grace in this charming geometric pattern chain crafted in 18 karat yellow gold",
+  "price": 45055,
+  "category": "chains",
+  "gross_weight": 6.207,
+  "size": 18,
+  "picture1": "\\images\\chains\\chain1a.png",
+  "picture2": "\\images\\chains\\chain1b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "qty": 1,
+  "updatedAt": {
+    "$date": "2024-04-22T09:35:38.448Z"
+  },
+  "sold": 5
+},
+{
+  "_id": {
+    "$oid": "661833b9bd40cc677e5d36f6"
+  },
+  "name": "Enticing Twisted Chain",
+  "description": "Look stunning when you adorn this enticing chain, with twisted ropes pattern, crafted in 22 karat yellow gold",
+  "price": 74453,
+  "category": "chains",
+  "gross_weight": 8.562,
+  "size": 18,
+  "picture1": "\\images\\chains\\chain2a.png",
+  "picture2": "\\images\\chains\\chain2b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 4,
+  "updatedAt": {
+    "$date": "2024-04-21T19:59:05.823Z"
+  },
+  "sold": 2
+},
+{
+  "_id": {
+    "$oid": "66183408bd40cc677e5d36f7"
+  },
+  "name": "Stylish Links Gold Chain",
+  "description": "Radiate extravagant opulence at special occasions with this bold links chain crafted in 18 Karat Yellow Gold featuring an eclectic, stylish design.",
+  "price": 45999,
+  "category": "chains",
+  "gross_weight": 6.207,
+  "size": 18,
+  "picture1": "\\images\\chains\\chain3a.png",
+  "picture2": "\\images\\chains\\chain3b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "qty": 5
+},
+{
+  "_id": {
+    "$oid": "66183448bd40cc677e5d36f8"
+  },
+  "name": "Bead and Tassels Diamond Pendant with Chain",
+  "description": "Embrace elegance with this bead and tassels style pendant with chain, crafted in 22 karat yellow gold, studded with diamonds",
+  "price": 65579,
+  "category": "chains",
+  "gross_weight": 7.451,
+  "size": 18,
+  "picture1": "\\images\\chains\\chain4a.png",
+  "picture2": "\\images\\chains\\chain4b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 5
+},
+{
+  "_id": {
+    "$oid": "66183485bd40cc677e5d36f9"
+  },
+  "name": "Radiant Union Diamond Pendant with Chain",
+  "description": "Capture the essence of everlasting love with this entwined double ring necklace with solitaire and ruby in 18 karat rose gold. Stone Clarity: SI2",
+  "price": 37853,
+  "category": "chains",
+  "gross_weight": 1.862,
+  "size": 18,
+  "picture1": "\\images\\chains\\chain5a.png",
+  "picture2": "\\images\\chains\\chain5b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "diamond_weight": 0.101,
+  "qty": 5
+},
+{
+  "_id": {
+    "$oid": "66183640bd40cc677e5d36fa"
+  },
+  "name": "Shree Yantra 22 karat gold coin",
+  "description": "This auspicious 8 gram coin with the sacred symbol of Shree Yantra is specially worshipped during the Diwali festival and on auspicious days to usher in prosperity and harmony.",
+  "price": 74315,
+  "category": "goldcoins",
+  "gross_weight": 7.906,
+  "picture1": "\\images\\goldcoins\\goldcoin1a.png",
+  "picture2": "\\images\\goldcoins\\goldcoin1b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "unisex",
+  "gold_purity": 22,
+  "qty": 1,
+  "updatedAt": {
+    "$date": "2024-04-23T08:12:41.306Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "661836c9bd40cc677e5d36fb"
+  },
+  "name": "Goddess Lakshmi with Lotus Motif 22 Karat Gold Coin",
+  "description": "This 8 gram coin is a symbol of purity and prosperity, crafted in 22 karat yellow gold.",
+  "price": 71194,
+  "category": "goldcoins",
+  "gross_weight": 7.574,
+  "picture1": "\\images\\goldcoins\\goldcoin2a.png",
+  "picture2": "\\images\\goldcoins\\goldcoin2b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "unisex",
+  "gold_purity": 22,
+  "qty": 3
+},
+{
+  "_id": {
+    "$oid": "66183871bd40cc677e5d36fd"
+  },
+  "name": "Ganesh Motif 22 Karat Gold Coin",
+  "description": "This 8 gram coin is a symbol of purity and prosperity, crafted in 22 karat yellow gold.",
+  "price": 81262,
+  "category": "goldcoins",
+  "gross_weight": 8.645,
+  "picture1": "\\images\\goldcoins\\goldcoin4a.png",
+  "picture2": "\\images\\goldcoins\\goldcoin4b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false,
+    "_id": {
+      "$oid": "6623e60057e20b2ff5f09f50"
+    }
+  },
+  "availability": true,
+  "gender": "unisex",
+  "gold_purity": 22,
+  "qty": 3,
+  "updatedAt": {
+    "$date": "2024-04-20T15:57:52.975Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "661838aebd40cc677e5d36fe"
+  },
+  "name": "Sitting Ganesh Motif 22 Karat Gold Coin",
+  "description": "This 8 gram coin is a symbol of purity and prosperity, crafted in 22 karat yellow gold.",
+  "price": 85360,
+  "category": "goldcoins",
+  "gross_weight": 9.081,
+  "picture1": "\\images\\goldcoins\\goldcoin5a.png",
+  "picture2": "\\images\\goldcoins\\goldcoin5b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "unisex",
+  "gold_purity": 22,
+  "qty": 3
+},
+{
+  "_id": {
+    "$oid": "66183a71bd40cc677e5d36ff"
+  },
+  "name": "Stellar Elegance 14KT Diamond Nose Pin",
+  "description": "Adorn your nose with our Nakshatra-Inspired 14KT Yellow Gold Nose Pin. This pretty piece captures the magic of the stars. Three elegant diamond-studded curves create a delicate and enchanting design. Wear it to embrace the beauty of Nakshatra .",
+  "price": 7168,
+  "category": "nosepins",
+  "gross_weight": 0.348,
+  "picture1": "\\images\\nosepins\\nosepin1a.png",
+  "picture2": "\\images\\nosepins\\nosepin1b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false,
+    "_id": {
+      "$oid": "6623e9cb4368541dbe16bb6e"
+    }
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 14,
+  "diamond_weight": 0.038,
+  "qty": 5,
+  "updatedAt": {
+    "$date": "2024-04-20T16:14:03.357Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66183b66bd40cc677e5d3700"
+  },
+  "name": "Flowerbud Gold and Diamond Nose Pin",
+  "description": "These flowerbud inspired nose pin has been crafted in 18 Karat Yellow Gold and studded with a diamond. Stone Clarity SI2",
+  "price": 19268,
+  "category": "nosepins",
+  "gross_weight": 0.243,
+  "picture1": "\\images\\nosepins\\nosepin2a.png",
+  "picture2": "\\images\\nosepins\\nosepin2b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "diamond_weight": 0.052,
+  "qty": 5
+},
+{
+  "_id": {
+    "$oid": "66183c02bd40cc677e5d3701"
+  },
+  "name": "Elegant Gold and Diamond Nose Pin",
+  "description": "Stylishly twisted Gold and Diamond Nose Pin for an elevated casual style. Crafted in 18 Karat Yellow Gold. Stone Clarity SI2",
+  "price": 20000,
+  "category": "nosepins",
+  "gross_weight": 0.273,
+  "picture1": "\\images\\nosepins\\nosepin3a.png",
+  "picture2": "\\images\\nosepins\\nosepin3b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "diamond_weight": 0.036,
+  "qty": 2,
+  "updatedAt": {
+    "$date": "2024-04-23T08:13:00.063Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66183c60bd40cc677e5d3703"
+  },
+  "name": "Stunning Three Stone Diamond Nose Pin",
+  "description": "Make a fashionable statement wherever you go wearing this Three Stone Diamond Nose Pin crafted in 18 Karat Yellow Gold. Stone clarity SI2.",
+  "price": 23568,
+  "category": "nosepins",
+  "gross_weight": 0.289,
+  "picture1": "\\images\\nosepins\\nosepin4a.png",
+  "picture2": "\\images\\nosepins\\nosepin4b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "diamond_weight": 0.069,
+  "qty": 5
+},
+{
+  "_id": {
+    "$oid": "66183ca7bd40cc677e5d3704"
+  },
+  "name": "Grand Cluster Diamond Nosepin",
+  "description": "An iconic piece with cluster pattern, this elegant nosepin is crafted in 18 karat yellow gold, studded with diamond in a pronged setting. Stone Clarity SI2",
+  "price": 31568,
+  "category": "nosepins",
+  "gross_weight": 0.558,
+  "picture1": "\\images\\nosepins\\nosepin5a.png",
+  "picture2": "\\images\\nosepins\\nosepin5b.png",
+  "type": {
+    "gold": true,
+    "diamond": true,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 18,
+  "diamond_weight": 0.082,
+  "qty": 5
+},
+{
+  "_id": {
+    "$oid": "66196dfd33fb0250ec019cb3"
+  },
+  "name": "Stately Vati Mangalsutra",
+  "description": "Celebrate the magic of your union with this vati-style mangalsutra crafted in 22 Karat Yellow Gold",
+  "price": 99758,
+  "category": "mangalsutras",
+  "gross_weight": 11.2,
+  "size": 18,
+  "picture1": "\\images\\mangalsutras\\mangalsutra1a.png",
+  "picture2": "\\images\\mangalsutras\\mangalsutra1b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 2,
+  "updatedAt": {
+    "$date": "2024-04-23T08:13:17.101Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66196e5533fb0250ec019cb4"
+  },
+  "name": "Brilliant Crescent Mangalsutra",
+  "description": "Bind your life to your partner's with this charming crescent mangalsutra crafted in 22 karat yellow gold",
+  "price": 127086,
+  "category": "mangalsutras",
+  "gross_weight": 14.212,
+  "size": 18,
+  "picture1": "\\images\\mangalsutras\\mangalsutra2a.png",
+  "picture2": "\\images\\mangalsutras\\mangalsutra2b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 3
+},
+{
+  "_id": {
+    "$oid": "66196e9433fb0250ec019cb5"
+  },
+  "name": "Brilliant Spherical Mangalsutra",
+  "description": "Crafted in 22 Karat Yellow Gold this Mangalsutra with a Sphere Motif to elevate your Traditional Wear and make you feel elegant",
+  "price": 52106,
+  "category": "mangalsutras",
+  "gross_weight": 5.85,
+  "size": 18,
+  "picture1": "\\images\\mangalsutras\\mangalsutra3a.png",
+  "picture2": "\\images\\mangalsutras\\mangalsutra3b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 5
+},
+{
+  "_id": {
+    "$oid": "66196ef033fb0250ec019cb6"
+  },
+  "name": "Elaborate Yellow Gold Beaded Mangalsutra",
+  "description": "This 22 Karat gold mangalsutra has a pattern of 5 black and 2 gold beads with a string of etched discs and bead clusters ending in a carved bead charm",
+  "price": 112567,
+  "category": "mangalsutras",
+  "gross_weight": 12.49,
+  "size": 18,
+  "picture1": "\\images\\mangalsutras\\mangalsutra4a.png",
+  "picture2": "\\images\\mangalsutras\\mangalsutra4b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 1
+},
+{
+  "_id": {
+    "$oid": "66196f2733fb0250ec019cb7"
+  },
+  "name": "Brilliant Contemporary Mangalsutra",
+  "description": "Enjoy a blend of modern design and tradition with this brilliant mangalsutra crafted in 22 Karat Yellow Gold.",
+  "price": 75123,
+  "category": "mangalsutras",
+  "gross_weight": 8.336,
+  "size": 18,
+  "picture1": "\\images\\mangalsutras\\mangalsutra5a.png",
+  "picture2": "\\images\\mangalsutras\\mangalsutra5b.png",
+  "type": {
+    "gold": true,
+    "diamond": false,
+    "silver": false,
+    "_id": {
+      "$oid": "6623e759341e21756cd800e1"
+    }
+  },
+  "availability": true,
+  "gender": "women",
+  "gold_purity": 22,
+  "qty": 9,
+  "updatedAt": {
+    "$date": "2024-04-20T16:03:37.851Z"
+  }
+}]

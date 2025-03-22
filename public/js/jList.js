@@ -212,6 +212,8 @@ const sortBackend = async () => {
 
     console.log(jewelleryIds);
     const current = selected.textContent;
+    // console.log(current)
+    // console.log(jewelleryIds)
     const res = await fetch("/jList/sort", {
         method: "POST",
         body: JSON.stringify({ current, jewelleryIds }),
